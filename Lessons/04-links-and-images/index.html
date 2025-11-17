@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Links and Images</title>
+    </head>
+    <body>
+        <h1>Homepage</h1>
+        <!-- Anchor Element -->
+        <!-- 
+        - Defined as <a>...</a>
+        - Useful for creating links within our html file
+        -->
+        <a>About The Odin Project</a>
+        <!-- 
+        - THIS ANCHOR DOESNT WORK (i.e., its not a link) 
+            - This is because we need attributes
+                - An HTML attribute gives additional information to an HTML 
+                element and always goes in the element’s OPENING tag
+                - An attribute is usually made up of two parts: 
+                    - a name, and a value
+                - **Not all attributes have a value though
+        -->
+
+
+        <!-- href -->
+        <!-- 
+        - Short for "Hypertext reference"
+        - We place href at the opening tag of an anchor statement
+            - The value of the href attribute is the DESTINATION we want our link to go to
+        -->
+        <p><a href="https://www.theodinproject.com/about">About The Odin Project</a></p>
+        <!-- **By default, any text wrapped with an anchor tag without an href
+         attribute will look like plain text** -->
+        
+        
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+        <!-- MORE ATTRIBUTES -->
+        <!-- 
+        - target: specifies where the linked resource will be opened. 
+            - If it is not present, then, BY DEFAULT, it will take on the _self value which opens the link in the current tab
+        - rel: describe the relation between the current page and the linked document.
+            - noopener: The value noopener ensures that a link opened in a new tab or window cannot interact with or access the original page
+                - Without it, the new page can use JavaScript to manipulate the original page, which poses a security risk
+            - noreferrer: provides both privacy and security. It prevents the new page from knowing where the user came from (hiding the referrer) and also includes the behavior of noopener, preventing the new page from accessing the original page.
+        -->
+
+        <!-- EXAMPLES -->
+        <p><a href="https://youtube.com" target=_self rel="noreferrer">Youtube - w/ target=_self & rel=noreferrer</a></p>
+        <p><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube - w/ target=_blank & rel=noopener and noreferrer</a></p>
+
+
+        <!-- Absolute and Relative Links -->
+
+    </body>
+</html>
