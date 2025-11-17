@@ -31,17 +31,34 @@
         <h4>This is a heading 4</h4>
         <h5>This is a heading 5</h5>
         <h6>This is a heading 6</h6>
+        <h7>h7 does not exist</h7>
 
         <!-- Strong Elements -->
         <!-- 
         - Defined as <stong>...</strong>
-        - They make the text bold, BUT, they are used to mark somewthing as important
+        - They make the text bold, BUT, they are used to mark something as important
         - Useful for screen readers that need to pick up on key words so the screen reader can adapt its tone in voice
         - Useful to use between a sentence
-            - Ex: <p> lorem ipsum <strong> dolor </strong> sit amet</p>
+            - Ex: <p>lorem ipsum <strong> dolor </strong> sit amet</p>
         -->
         <p>Lorem ipsum <strong>dolor sit</strong> amet, consectetur adipisicing elit.</p>
 
         <!-- Em Element -->
+        <!--
+        - Defined as <em>Some emphasized text</em>
+        - em == emphasis
+        - Makes text italic
+        - Used to add emphasis on text
+        - Useful for screen readers (like we saw using the "strong" tag)
+        - Useful to use between a sentence
+            - Ex: <p>lorem ipsum <em> dolor </em> sit amet</p>
+        -->
+        <em>Some emphasized text</em>
+        <p>lorem ipsum <em> dolor </em> sit amet</p>
+
+        <!-- 
+        - <i> and <b> tags do exist and work as italics and bold respectively
+        - They DO NOT add impoantance on the text for screen readers 
+        - Although they both work, it's regarded as less useful then just using <em> and <strong> -->
     </body>
 </html>
