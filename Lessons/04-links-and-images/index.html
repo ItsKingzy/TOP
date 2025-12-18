@@ -59,8 +59,24 @@
 
 
         <!-- Absolute and Relative Links -->
+        <!-- 
+        - Absolute Links: links to pages on other websites on the internet, which always includes the scheme and domain of the destination.
+            - Defined as: scheme://domain/path
+            - Ex: https://www.theodinproject.com/about
+                - Scheme: https
+                - Domain: www.theodinproject.com
+                - Path: about
         
-        
+        - Relative Links: Links to other pages within our own website. They don't include the domain name since it's just another page associated with the same site (i.e., the domain is assumed to be the same).  
+            - These links are essentially just file paths to other pages relative to the page you are currently on.
+                Ex: Linking index.html to about.html
+        -->
+    
+        <!-- EXAMPLE -->
+        <h1>About Test</h1>
+        <p><a href="./pages/about.html">About</a></p>
+            <!-- This works because "index.html" and "about.html" are in the same directory -->
+            <!-- We prepend "./" to start start of "pages/about.html" to avoid running into edge cases where the link may break if we cannot find the folder-->
 
     </body>
 </html>
