@@ -1,2 +1,3 @@
 Odin Home: https://www.theodinproject.com/dashboard
 HTML Markup Validator: https://validator.w3.org/#validate_by_input
+Git Commit Rules: https://cbea.ms/git-commit
