@@ -4,5 +4,16 @@
 /* 
 Universal Selector 
     - Selects elements of every type (as in the whole document) and sets every element to the style you chose
-
 */
+* {
+    color: purple;
+}
+
+/* 
+Type Selectors
+    - (or element selector) will select all elements of the given element type
+    - The syntax is just the name of the element in HTML
+*/
+div {
+    color: red;
+}
