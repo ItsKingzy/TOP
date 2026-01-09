@@ -15,5 +15,15 @@ Type Selectors
     - The syntax is just the name of the element in HTML
 */
 div {
+    color: rgb(0, 108, 135);
+}
+
+/* 
+Class Selector
+    - Selects all elements with the given class (which is just an attribute you place on an HTML element
+    - In HTML: <div class="example-text">Example text here.</div>
+    - In CSS: .example-text { color: red; }
+*/
+.alert-text {
     color: red;
 }
