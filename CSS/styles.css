@@ -23,6 +23,10 @@ Class Selector
     - Selects all elements with the given class (which is just an attribute you place on an HTML element
     - In HTML: <div class="example-text">Example text here.</div>
     - In CSS: .example-text { color: red; }
+    - **Classes aren’t required to be specific to a particular element, so you can use the same class on as many elements as you want.
+    - **Class selectors won’t work if the class name begins with a number. Ex: .4lert-text
+    - ** You can also add more than one class selector (space seperated) for one class.
+        - This means you cannot use spaces for multi-worded class selectors, by hyphen it instead.
 */
 .alert-text {
     color: red;
