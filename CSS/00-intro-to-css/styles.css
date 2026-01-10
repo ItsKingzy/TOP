@@ -42,6 +42,14 @@ Class Selector
 }
 
 
+/* 
+ID Selectors 
+    - ID selectors are similar to class selectors in the sense that they are given an "ID" rather than the class.
+        - The main difference is that elements can only have one ID unlike classes (which can have more than one selector identifier).
+    - In HTML: <div id="example-text">Example text here.</div>
+    - In CSS: #example-text { color: red; }
+*/
+
 
 
 
