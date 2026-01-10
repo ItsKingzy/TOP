@@ -49,7 +49,9 @@ ID Selectors
     - These selectors should contain no white spaces.
     - In HTML: <div id="example-text">Example text here.</div>
     - In CSS: #example-text { color: red; }
-    
+    - ** You should use IDs sparingly (if at all) as classes shall suffice for mostly every normal task.
+    - ** Just like classes, ID Selectors cannot use numbers in front of the IDs.
+        - I.e., #7itle would not be legal.
 */
 #title {
     background-color: rebeccapurple;
