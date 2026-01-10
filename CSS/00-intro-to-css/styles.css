@@ -93,4 +93,19 @@ Grouping Selector
 }
 
 
+/* 
+Chaining Selectors
+    - Another way to chain them as a list without any separation
+    - Essentially you have a class or/and an ID attribute(s) for which you can combine/chain selectors within the same group (an example would be more clear (see index.html and styles.css).
+    - ** You can’t chain more than one type selector since an element can’t be two different types at once
+        - Ex: Chaining two type selectors like div and p would give us the selector divp, which wouldn’t work since the selector would try to find a literal <divp> element, which doesn’t exist.
+*/
+.subsection.header {
+    color: red;
+}
+
+.subsection#preview {
+    color: blue;
+}
+
 
