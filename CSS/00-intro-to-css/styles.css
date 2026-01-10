@@ -59,6 +59,38 @@ ID Selectors
 }
 
 
+/* 
+Grouping Selector
+    - Very similar to the idea of abstraction in OOP, where you pull out the common parts of code and reuse it while adding the uncommon parts after seperately defining the class
+*/
+
+/* Poor example of grouping selector */
+.read {
+    color: white;
+    background-color: black;
+    /* several unique declarations */
+}
+
+.unread {
+    color: black;
+    background-color: white;
+    /* several unique declarations */
+}
+
+/* Good example of grouping selector */
+.read
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.read {
+    /* several unique declarations */
+}
+
+.unread {
+    /* several unique declarations */
+}
 
 
 
