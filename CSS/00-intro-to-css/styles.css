@@ -49,8 +49,12 @@ ID Selectors
     - These selectors should contain no white spaces.
     - In HTML: <div id="example-text">Example text here.</div>
     - In CSS: #example-text { color: red; }
+    
 */
-
+#title {
+    background-color: rebeccapurple;
+    color: aqua;
+}
 
 
 
