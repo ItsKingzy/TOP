@@ -9,6 +9,7 @@ Universal Selector
     color: purple;
 }
 
+
 /* 
 Type Selectors
     - (or element selector) will select all elements of the given element type
@@ -17,6 +18,7 @@ Type Selectors
 div {
     color: rgb(0, 108, 135);
 }
+
 
 /* 
 Class Selector
@@ -63,7 +65,6 @@ ID Selectors
 Grouping Selector
     - Very similar to the idea of abstraction in OOP, where you pull out the common parts of code and reuse it while adding the uncommon parts after seperately defining the class
 */
-
 /* Poor example of grouping selector */
 .read {
     color: white;
