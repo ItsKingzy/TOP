@@ -115,7 +115,7 @@ Descendant Combinator
     - A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
         - Think parent-child relationship, you need a parent element with a selector (this will be the "root" selector, then you have your children elements each with their own selectors. In turn, the descendant combinator combines parent + child s.t. each element (child) with that child selector, shall be selected (see example below and in HTML).
         - Also think nesting elements, this might be more clear the more we practice
-        - *** The children you reference must all have the same class
+        - *** The children you reference must all have the same class, unless you are looking to reference a specific child (see EX2)
     - Represented in CSS by a single space between selectors (i.e., .ancestor .contents {...}).
     - In the example below, only the first two elements with the "contents" class were selected, but the last one was not selected
 */
@@ -137,7 +137,8 @@ Descendant Combinator
 }
 
 /* *** EX2 *** */
-.one .two {
+/* This is totally legal, this just selects an element that has a class of "four" if it has an ancestor with a class of "three", and if that ancestor has its own ancestor with a class of "two", and so on */
+.one .two .three .four {
     color: violet;
     background-color: burlywood;
 }
