@@ -117,4 +117,7 @@ Descendant Combinator
     - Represented in CSS by a single space between selectors (i.e., .ancestor .contents {...}).
     - 
 */
+.ancestor .contents {
+    /* some declarations */
+}
 
