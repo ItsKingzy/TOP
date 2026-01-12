@@ -118,6 +118,8 @@ Descendant Combinator
     - 
 */
 .ancestor .contents {
+    color: chocolate;
+    background-color: aqua;
     /* some declarations */
 }
 
