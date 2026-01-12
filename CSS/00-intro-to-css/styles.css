@@ -112,6 +112,9 @@ Chaining Selectors
 
 /* 
 Descendant Combinator 
+    - A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
+        - Think parent-child relationship, you need a parent element with a selector (this will be the "root" selector, then you have your children elements each with their own selectors. In turn, the descendant combinator combines parent + child s.t. each element (child) with that child selector, shall be selected (see example below and in HTML).
+    - Represented in CSS by a single space between selectors (i.e., .ancestor .contents {...}).
     - 
 */
 
