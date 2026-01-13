@@ -146,4 +146,26 @@ Descendant Combinator
 
 
 
-/* PROPERTIES (new topic) */
+/* 
+PROPERTIES (new topic) 
+    - All properties have a default value, thus if you don't specify the value, then CSS will auto to a default value
+*/
+
+/* 
+color & background-color 
+    - They accept both actual color names (e.g., red) and HEX, RGB, and HSL.
+*/
+p {
+    /* hex example */
+    color: #1100ff;
+}
+p {
+    /* rgb example */
+    color: rgb(100, 0, 127);
+}
+p {
+    /* hsl example */
+    color: hsl(15, 82%, 56%);
+    color: hsl(15, 82, 56);
+    /* These two examples above are the same */
+}
