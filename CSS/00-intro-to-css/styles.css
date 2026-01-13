@@ -169,3 +169,32 @@ p {
     color: hsl(15, 82, 56);
     /* These two examples above are the same */
 }
+
+
+/*  
+Typography basics & text-align
+    - font-family:
+        - "font-family" can be a single value or a comma-separated list of values that determine what font an element uses.
+            - e.g., font-family: "Times New Roman";
+                - this would be an example of a "font family name"
+            - e.g., font-family: serif;
+                - this would be an example of a "generic family name"
+                - generic family names never use quotes
+        - If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on until it finds a supported and valid font.
+            - Thus, it’s best practice to include a list of values for this property, starting with the font you want to be used most and ending with a generic font family as a fallback.
+                - e.g., font-family: "Times New Roman", serif;
+    
+    - font-size:
+        - Sets the size of the font.
+        - Do NOT add white spaces between the text
+            - e.g., font-size: 22px;
+    
+    - font-weight:
+        - Affects the boldness of the text (assuming the font supports the specified weight).
+            e.g., font-weight: bold;
+        - The value can also be an integer between 1 and 1000 (inclusive), so font-weight: 700; would be equivilant to bold.
+            - Usually the increments will be of 100 up to 900, though this depends on the font you choose.
+    
+    - text-align:
+        - Aligns text horizontally within an element, and you can use the commen keywords you may have come across in word processors as the value for this property (e.g., text-align: center;)
+*/
