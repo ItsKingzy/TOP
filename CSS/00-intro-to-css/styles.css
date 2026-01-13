@@ -263,6 +263,8 @@ Inline CSS
         <body>
             <div style="color: white; background-color: black;">...</div>
         </body>
+        
+        - "style" is the attribute you add to your element in HTML
     - ** We don't use selectors here
     - ** We have the style= attribute here, with its value within the pair of quotation marks being the declarations.
     - ** If you need to add a unique style for a single element, this method can work just fine.
