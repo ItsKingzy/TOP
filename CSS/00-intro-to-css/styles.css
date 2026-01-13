@@ -254,5 +254,20 @@ Internal CSS (or embedded CSS)
             ...
         </body>
     - Since the styles are being directly placed inside the head, then we no longer need the <link> element inside the head.
+*/
 
+
+/* 
+Inline CSS
+    - This method makes it possible to add styles directly to HTML elements, though it's not recommended:
+        <body>
+            <div style="color: white; background-color: black;">...</div>
+        </body>
+    - ** We don't use selectors here
+    - ** We have the style= attribute here, with its value within the pair of quotation marks being the declarations.
+    - ** If you need to add a unique style for a single element, this method can work just fine.
+    - This method is not recommended for the following reasons:
+        - It can quickly become pretty messy since you start adding a LOT of declarations to a single element, causing your HTML file to become unncesarily bloated.
+        - If you want many elements to have the same style, you would have to copy and paste the same style to each individual element, causing lots of unnecessary repetition and more bloat.
+        - Any inline CSS will override the other two methods, which can cause unexpected results.
 */
