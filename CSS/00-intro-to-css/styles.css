@@ -3,7 +3,7 @@
 
 /* 
 Universal Selector 
-    - Selects elements of every type (as in the whole document) and sets every element to the style you chose
+    - Selects elements of every type (as in the whole document) and sets every element to the style(s) you chose
 */
 * {
     color: purple;
@@ -12,8 +12,7 @@ Universal Selector
 
 /* 
 Type Selectors
-    - (or element selector) will select all elements of the given element type
-    - The syntax is just the name of the element in HTML
+    - (AKA Element Selector) will select all elements of the given element type, and set only those specific elements to the style(s) you chose
 */
 div {
     color: rgb(0, 108, 135);
@@ -23,13 +22,14 @@ div {
 /* 
 Class Selector
     - Selects all elements with the given class (which is just an attribute you place on an HTML element
-    - In HTML: <div class="example-text">Example text here.</div>
-    - In CSS: .example-text { color: red; }
+        - In HTML: <div class="example-text">Example text here.</div>
+        - In CSS: .example-text { color: red; }
     - ** Classes aren’t required to be specific to a particular element, so you can use the same class on as many elements as you want.
-    - ** Class selectors won’t work if the class name begins with a number. Ex: .4lert-text
+    - ** Class selectors won’t work if the class name begins with a number. 
+        - Ex: .4lert-text
     - ** In CSS you must also define class selectors starting with a period.
     - ** You can also add more than one class selector (space seperated) for one class.
-        - This means you cannot use spaces for multi-worded class selectors, by hyphen it instead.
+        - This means you cannot use spaces for multi-worded class selectors, hyphen the word instead instead.
 */
 .alert-text {
     color: red;
@@ -47,13 +47,13 @@ Class Selector
 /* 
 ID Selectors 
     - ID selectors are similar to class selectors in the sense that they are given an "ID" rather than the class.
-        - The main difference is that elements can only have one ID unlike classes (which can have more than one selector identifier).
+        - The main difference is that elements can only have one ID unlike classes (which can have more than one selector class name).
     - These selectors should contain no white spaces.
-    - In HTML: <div id="example-text">Example text here.</div>
-    - In CSS: #example-text { color: red; }
+        - In HTML: <div id="example-text">Example text here.</div>
+        - In CSS: #example-text { color: red; }
     - ** You should use IDs sparingly (if at all) as classes shall suffice for mostly every normal task.
     - ** Just like classes, ID Selectors cannot use numbers in front of the IDs.
-        - I.e., #7itle would not be legal.
+        - I.e., #7itle would NOT be legal.
 */
 #title {
     background-color: rebeccapurple;
@@ -96,7 +96,7 @@ Grouping Selector
 
 /* 
 Chaining Selectors
-    - Another way to chain them as a list without any separation
+    - Another way to chain selectors is to chain them as a list without any separation
     - Essentially you have a class or/and an ID attribute(s) for which you can combine/chain selectors within the same group (an example would be more clear (see index.html and styles.css).
     - ** You can’t chain more than one type selector since an element can’t be two different types at once
         - Ex: Chaining two type selectors like div and p would give us the selector divp, which wouldn’t work since the selector would try to find a literal <divp> element, which doesn’t exist.
@@ -113,11 +113,11 @@ Chaining Selectors
 /* 
 Descendant Combinator 
     - A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.) that matches the previous selector.
-        - Think parent-child relationship, you need a parent element with a selector (this will be the "root" selector, then you have your children elements each with their own selectors. In turn, the descendant combinator combines parent + child s.t. each element (child) with that child selector, shall be selected (see example below and in HTML).
+        - Think parent-child relationship, you need a parent element with a selector (this will be the "root" selector), then you have your children elements each with their own selectors. In turn, the descendant combinator combines parent + child s.t. each element (child) with that child selector, shall be selected (see example below and in HTML).
         - Also think nesting elements, this might be more clear the more we practice
         - *** The children you reference must all have the same class, unless you are looking to reference a specific child (see EX2)
     - Represented in CSS by a single space between selectors (i.e., .ancestor .contents {...}).
-    - In the example below, only the first two elements with the "contents" class were selected, but the last one was not selected
+    - In the example below, only the first two elements with the "contents" class were selected, but the last one was not selected (as it's not apart of the root element class "ancestor").
 */
 
 /* *** EX1 *** */
