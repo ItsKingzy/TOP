@@ -1,3 +1,5 @@
 Odin Home: https://www.theodinproject.com/dashboard
 HTML Markup Validator: https://validator.w3.org/#validate_by_input
 Git Commit Rules: https://cbea.ms/git-commit
+Creating a copy of a forked repo: https://github.com/orgs/community/discussions/45474
+    - This was used for the css-exercises repo, but I wanted to have the contributions show on my profile (is this unethical??? Maybe but the license is still there).
