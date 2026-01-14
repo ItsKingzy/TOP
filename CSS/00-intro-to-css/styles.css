@@ -198,6 +198,13 @@ Typography basics & text-align
     - text-align:
         - Aligns text horizontally within an element, and you can use the commen keywords you may have come across in word processors as the value for this property (e.g., text-align: center;)
 */
+.headings {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    background-color: yellow;
+}
 
 
 /* 
