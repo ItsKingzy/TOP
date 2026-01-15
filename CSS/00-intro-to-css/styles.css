@@ -79,7 +79,7 @@ Grouping Selector
 }
 
 /* Good example of grouping selector */
-.read
+.read, /* There needs to be a comma here */
 .unread {
     color: white;
     background-color: black;
