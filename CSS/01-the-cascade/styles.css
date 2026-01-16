@@ -1,0 +1,33 @@
+/* 
+Specificity
+    - A CSS declaratuons that is more specific will take precdence over less specific ones.
+        - e.g., inline styles have the highest specificity compared to selectors
+        - Each type of selector has its own level of specificity
+            1. ID selectors (most specific selector)
+            2. Class selectors
+            3. Type selectors
+    - An ID selector will always beat any number of class selectors
+    - A class selector will always beat any number of type selectors
+    - A type selector will always beat any number of less specific selectors
+    - ** When there is no declaration with a selector of higher specificity, a rule with a greater number of selectors of the same type will take precedence over another rule with fewer selectors of the same type
+*/
+
+/* 
+EXAMPLE 1 
+    - In this example below, both rules. are using only class selectors but rule 2 is more specific because it is using more class selectors. Thus, the color: red declaration would take precedence.
+*/
+/* <!-- index.html --> */
+/* <div class="main">
+  <div class="list subsection">Red text</div>
+</div> */
+
+/* rule 1 */
+.subsection {
+    color: blue;
+}
+
+/* rule 2 */
+.main .list {
+    color: red;
+}
+
