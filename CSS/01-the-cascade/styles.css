@@ -74,6 +74,28 @@ EXAMPLE 3
 
 /* 
 Not everything adds to specificity
-    - 
+    - When comparing selectors, symbols like the universal selector (*) and the combinators (+, ~, >, and empty spaces) do NOT inherently convey any additional specificity.
+*/
 
+/* 
+EXAMPLE 1 
+    - In this example below, both rules have the same specificity:
+        - Rule 1 uses a chained selector (no space)
+        - Rule 2 uses a descendant combinator (the empty space)
+    - Though, both classes and the combinator symbol itself does not add to the specificity.
+        - ** NOTE: Do not confuse the ".class" and ".second-class" for both rules as being the same class. It's purely for representing SOME arbitrary class that we don't necessarily know the name of.
+*/
+/* rule 1 */
+.class.second-class {
+    font-size: 12px;
+}
+
+/* rule 2 */
+.class .second-class {
+    font-size: 24px;
+}
+
+/* 
+EXAMPLE 2 
+    - 
 */
