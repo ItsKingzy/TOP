@@ -17,17 +17,17 @@ EXAMPLE 1
     - In this example below, both rules. are using only class selectors but rule 2 is more specific because it is using more class selectors. Thus, the color: red declaration would take precedence.
 */
 /* <!-- index.html --> */
-/* <div class="main">
-  <div class="list subsection">Red text</div>
+/* <div class="main1">
+  <div class="list1 subsection1">Red text</div>
 </div> */
 
 /* rule 1 */
-.subsection {
+.subsection1 {
     color: blue;
 }
 
 /* rule 2 */
-.main .list {
+.main1 .list1 {
     color: red;
 }
 
@@ -36,16 +36,36 @@ EXAMPLE 2
     - In this example below, since ID selectors take precedence over classes (regardless of the specificity of classes used in rule2), then the text will change to the colour blue.
 */
 /* <!-- index.html --> */
-/* <div class="main">
-  <div class="list subsection">Red text</div>
+/* <div class="main2">
+  <div class="list2 subsection2">Blue text</div>
 </div> */
 
 /* rule 1 */
-#subsection {
+#subsection2 {
     color: blue;
 }
 
 /* rule 2 */
-.main .list {
+.main2 .list2 {
+    color: red;
+}
+
+/* 
+EXAMPLE 3
+    - In this example below, 
+*/
+/* <!-- index.html --> */
+/* <div class="main3">
+  <div class="list3 subsection3">Red text on yellow background</div>
+</div> */
+
+/* rule 1 */
+#subsection3 {
+    background-color: yellow;
+    color: blue;
+}
+
+/* rule 2 */
+.main3 #subsection3 {
     color: red;
 }
