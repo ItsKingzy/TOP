@@ -52,7 +52,8 @@ EXAMPLE 2
 
 /* 
 EXAMPLE 3
-    - In this example below, 
+    - In this example below, since the ID selectors have the highest precedence, then there is a conflict between the two rules below. Since the rule 2 has an ID selector (the highest precedence) but also has a more specific overall selectors since it combines ID and a class, then it will superceed the rule 1. Thus, the text becomes red.
+    - However, this is the complex part, the background also changed colour to yellow, weird right? Well this is because the .subsection3 ID selector conflicts with the .main3 #subsection3 as they both contain colour, but .main3 #subsection3 overwrites the colour property in rule 1, but it does not overwrite the background colour since .main3 #subsection3 does not define a background within its block.
 */
 /* <!-- index.html --> */
 /* <div class="main3">
