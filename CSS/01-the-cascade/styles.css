@@ -109,4 +109,19 @@ EXAMPLE 2
     font-size: 24px;
 }
 
+/* 
+EXAMPLE 2 
+    - In this example below, rule 2 would have higher specificity and the orange value would take precedence for this element. Rule 2 uses a type selector, which has the lowest specificity value, but rule uses the universal selector (*) which has no specificity value.
+    - You can think of the universal selector as sort of a place holder or almost null value, as it changes the style of every element that doesnt have at least a type selector style.
+*/
+/* rule 1 */
+* {
+    color: black;
+}
+
+/* rule 2 */
+h1 {
+    color: orange;
+}
+
 
