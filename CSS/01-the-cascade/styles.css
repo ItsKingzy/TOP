@@ -31,3 +31,21 @@ EXAMPLE 1
     color: red;
 }
 
+/* 
+EXAMPLE 2
+    - In this example below, since ID selectors take precedence over classes (regardless of the specificity of classes used in rule2), then the text will change to the colour blue.
+*/
+/* <!-- index.html --> */
+/* <div class="main">
+  <div class="list subsection">Red text</div>
+</div> */
+
+/* rule 1 */
+#subsection {
+    color: blue;
+}
+
+/* rule 2 */
+.main .list {
+    color: red;
+}
