@@ -182,3 +182,20 @@ HTML:
     color: brown;
     background-color: lightpink;
 }
+
+
+/* 
+Rule Order
+    - If two or more selectors run through every edge case and factor that could be a conflicting measure for two or more selectors that share the same styling (i.e., trying to style the same thing), meaning above everything, there is a tie break... then the cascade applies the style of the selector that was most recently defined (i.e., the last rule defined in the css file).
+    - Ex (see below): For an element that has both the alert and warning classes, the cascade would run through every other factor, including inheritance (none here) and specificity (neither rule is more specific than the other). Since the .warning rule was the last one defined, and no other factor was able to determine which rule to apply, it’s the one that gets applied to the element.
+*/
+/* styles.css */
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
+
+
