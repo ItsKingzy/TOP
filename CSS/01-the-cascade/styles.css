@@ -127,7 +127,15 @@ h1 {
 
 /* 
 Inheritance
-    - 
-
+    - Def. from W3Schools: "CSS inheritance is about what happens if no value is specified for a property on an element."
+    - "If no value is specified for a property, the value can either be inherited from the parent element, or be set to its initial (default) value."
+        - Thus for properties, we categorize them in two:
+            - Inherited properties:
+                - Inherited properties are, by default, set to the computed value of the parent element.
+            - Non-inherited properties:
+                - If there is not set a value for a non-inherited property, the value is set to the initial (default) value of that property.
 */
+/* Example of Inherited property */
+
+/* Example of Non-inherited property */
 
