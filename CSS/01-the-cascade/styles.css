@@ -169,3 +169,14 @@ HTML:
     <p>This is a paragraph with some <strong>important</strong> text.</p>
 </body>
 */
+.inheritance {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inheritance #inherited {
+    background-color: lightblue;
+    color: rgb(80, 80, 255);
+}
+.inheritance #non-inherited {
+    color: brown;
+    background-color: lightpink;
+}
