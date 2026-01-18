@@ -135,7 +135,37 @@ Inheritance
             - Non-inherited properties:
                 - If there is not set a value for a non-inherited property, the value is set to the initial (default) value of that property.
 */
-/* Example of Inherited property */
+/* 
+Example of Inherited property 
+    - In this example, the text inside the <strong> element will appear in 20px and in blue, since the <strong> element inherits the color and the font-size value from the parent (<p>) element.
+*/
+/* 
+HTML:
+<style>
+    p {
+        color: blue;
+        font-size: 20px;
+    }
+</style>
 
-/* Example of Non-inherited property */
+<body>
+    <p>This is a paragraph with some <strong>important</strong> text.</p>
+</body> 
+*/
 
+/* 
+Example of Non-inherited property 
+    - In this example, the <strong> element, inside the <p> element, will not have an additional border (since the initial value of border-style is none).
+*/
+/* 
+HTML:
+<style>
+    p {
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+    <p>This is a paragraph with some <strong>important</strong> text.</p>
+</body>
+*/
