@@ -3,3 +3,6 @@ HTML Markup Validator: https://validator.w3.org/#validate_by_input
 Git Commit Rules: https://cbea.ms/git-commit
 Creating a copy of a forked repo: https://github.com/orgs/community/discussions/45474
     - This was used for the css-exercises repo, but I wanted to have the contributions show on my profile (is this unethical??? Maybe but the license is still there).
+DevTools in Chrome: https://developer.chrome.com/docs/devtools/overview/
+Learning about DOM: https://developer.chrome.com/docs/devtools/dom/
+Editing CSS within inspect elements: https://developer.chrome.com/docs/devtools/css
