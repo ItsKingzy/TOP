@@ -5,5 +5,9 @@ The Box Model
         * {
             outline: 2px solid red;
         }
+    - There are many ways to manipulate the size of these boxes, and the spaces between them, using padding, border, and margin.
+        - padding: increases the space between the border of a box and the content of the box.
+        - border: adds space (even if it's only a pixel of two) between the margin and the padding.
+        - margin: increases the space between the borders of a box and the borders of adjacent boxes.
 */
 
