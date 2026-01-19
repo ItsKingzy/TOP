@@ -1,0 +1,9 @@
+/* 
+The Box Model 
+    - Every single thing on a webpage is a rectangular box, these boxes can have other boxes in them and can sit alongside one another.
+    - To view these "Boxes" on a webpage, use the following CSS:
+        * {
+            outline: 2px solid red;
+        }
+*/
+
