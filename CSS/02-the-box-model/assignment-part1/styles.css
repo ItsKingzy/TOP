@@ -19,5 +19,12 @@
 
 .box-two {
     background-color: #2D9CDB;
-    border: 0 solid #27AE60;
+    padding: 10px;
+    border: 30px solid #27AE60;
+    /* 
+    margin = 60px
+    The margin between both element 1 and element 2 is the same 60px and not 120px because margin collapses between elements next to each other. Thus if we change the margin to be 70px, between the two elements it will take the max of the two margins (ONLY BETWEEN ELEMENTS, meaning that their margin from the edge of the screen will be whatever that element has as a unique margin. */
+    margin: 70px;
+    height: 100px;
+    width: 100px;
 }
