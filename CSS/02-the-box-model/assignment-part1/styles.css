@@ -6,9 +6,12 @@
 
 .box-one {
     background-color: #EB5757;
-    padding: 20px;
-    border: 20px solid #9B51E0;
-    margin: 20px;
+    padding: 10px;
+    border: 30px solid #9B51E0;
+    margin: 60px;
+    /* The height and width will change the size of the content (in our case the content for class box-one is the text "One") */
+    height: 100px;
+    width: 100px;
 }
 
 .box-two {
