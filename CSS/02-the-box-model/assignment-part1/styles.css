@@ -25,7 +25,13 @@
     margin = 60px
     The margin between both element 1 and element 2 is the same 60px and not 120px because margin collapses between elements next to each other. Thus if we change the margin to be 70px, between the two elements it will take the max of the two margins (ONLY BETWEEN ELEMENTS, meaning that their margin from the edge of the screen will be whatever that element has as a unique margin. */
     margin: 70px;
-    /* When looking at the overall size (width x height) of this element in the inspect element DevTools, we notice that box-two will be a total size of 180px x 180px (10px padding on the top + 10 pixel padding on the bottom + 30px border on the top + 30 px border on the bottom + height ( the same can be done for the width)) since the margin doesn't account into the width and height using CSS by default */
+    /* 
+    - When looking at the overall size (width x height) of this element in the inspect element DevTools, we notice that box-two will be a total size of 180px x 180px (10px padding on the top + 10 pixel padding on the bottom + 30px border on the top + 30 px border on the bottom + height ( the same can be done for the width)) since the margin doesn't account into the width and height using CSS by default.
+    - If we wanted to fix this, we would have to add box-sizing: border-box;
+        - This makes the height and width account for the padding and border of our element which cut into our height and width
+    */
     height: 100px;
     width: 100px;
+    /* This makes the actual size of our content in the inspect element be considered as 20px x 20px sinc ethe padding and border cut into the height and width of our height and width of our content which we originally set to 100px x 100px. */
+    box-sizing: border-box;
 }
