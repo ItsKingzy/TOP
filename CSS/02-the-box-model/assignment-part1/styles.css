@@ -32,8 +32,10 @@
     */
     height: 100px;
     width: 100px;
-    /* This makes the actual size of our content in the inspect element be considered as 20px x 20px since the padding and border cut into the height and width of our height and width of our content which we originally set to 100px x 100px. but overall the total width (including the content, padding, and border) is what we actually set as the width). */
-    box-sizing: border-box;
+    /* This makes the actual size of our content in the inspect element be considered as 20px x 20px since the padding and border cut into the height and width of our height and width of our content which we originally set to 100px x 100px. but overall the total width (including the content, padding, and border) is what we actually set as the width).
+        - box-sizing: content-box; is the default
+    */
+    box-sizing: border-box; 
 
     /* box-sizing: border-box explained: https://www.youtube.com/watch?v=HdZHcFWcAd8 */
 }
