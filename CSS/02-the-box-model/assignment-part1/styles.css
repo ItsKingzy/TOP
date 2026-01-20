@@ -6,8 +6,11 @@
 
 .box-one {
     background-color: #EB5757;
+    /* Padding is when we add spacing around content */
     padding: 10px;
+    /* Border is when we add almost this sort of rectangle or stroke the surrounds our content and padding */
     border: 30px solid #9B51E0;
+    /* Margin is what adds space between other elements on the webpage or moves elements away from the edges of the webpage. */
     margin: 60px;
     /* The height and width will change the size of the content (in our case the content for class box-one is the text "One") */
     height: 100px;
