@@ -1,0 +1,12 @@
+/* 
+Rule: the entire block of a css styles applied to some selector
+Selector: What object are you slecting to style
+Property: The actual style you want to apply to the selector
+Value: this is the value of the property you're using
+Declaration: property-value pair
+*/
+
+div.bold-text {
+    font-weight: 700;
+}
+
