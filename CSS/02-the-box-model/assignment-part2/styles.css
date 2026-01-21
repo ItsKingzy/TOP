@@ -1,7 +1,9 @@
 /* Reference for examples: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model */
 
+/* UNCOMMENT EXAMPLES TO SEE SPECIFIC EXAMPLE IN ACTION */
+
 /* Exmaple 1 */
-body {
+/* body {
     font-family: sans-serif;
 }
 p,
@@ -22,13 +24,14 @@ ul {
 }
 
 .block {
-    /* The span element is inline by default so we have to change its display to block */
+    
     display: block;
-}
+} */
+ /* The span element is inline by default so we have to change its display to block */
 
 
 /* Example 2 */
-body {
+/* body {
     font-family: sans-serif;
 }
 p,
@@ -49,7 +52,7 @@ ul {
 
 .inline {
     display: inline;
-}
+} */
 
 
 /* 
@@ -63,7 +66,7 @@ Making up a block box in CSS we have the:
 
 
 /* Example 3 */
-.box {
+/* .box {
     border: 5px solid rebeccapurple;
     background-color: lightgray;
     padding: 40px;
@@ -74,11 +77,11 @@ Making up a block box in CSS we have the:
 
 .alternate {
     box-sizing: border-box;
-}
+} */
 
 
 /* Example 4 */
-.container {
+/* .container {
     border: 5px solid blue;
     margin: 40px;
 }
@@ -88,9 +91,132 @@ Making up a block box in CSS we have the:
     background-color: lightgray;
     padding: 10px;
     height: 100px;
-    /* try changing the margin properties: */
     margin-top: 0px;
     margin-right: -4px;
     margin-bottom: 40px;
     margin-left: 40em;
+} */
+
+
+/* Example 5 */
+/* In the example below, we have two paragraphs. The top paragraph has a margin-bottom of 50 pixels, the other has a margin-top of 30 pixels. The margins have collapsed together so the actual margin between the boxes is 50 pixels and not the total of the two margins. */
+/* .container {
+    border: 5px solid blue;
+    margin: 40px;
+}
+
+p {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 10px;
+}
+.one {
+    margin-bottom: 50px;
+}
+
+.two {
+    margin-top: 30px;
+} */
+
+
+/* Example 6 */
+/* 
+To set the properties of each side individually, use:
+    - border-top
+    - border-right
+    - border-bottom
+    - border-left
+
+To set the width, style, or color of all sides, use:
+    - border-width
+    - border-style
+    - border-color
+
+To set the width, style, or color of a single side, use one of the more granular longhand properties:
+    - border-top-width
+    - border-top-style
+    - border-top-color
+    - border-right-width
+    - border-right-style
+    - border-right-color
+    - border-bottom-width
+    - border-bottom-style
+    - border-bottom-color
+    - border-left-width
+    - border-left-style
+    - border-left-color
+*/
+/* body {
+    font-family: sans-serif;
+}
+.container {
+    margin: 40px;
+    padding: 20px;
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double rgb(23 45 145);
+}
+
+.box {
+    padding: 20px;
+    background-color: lightgray;
+    border: 5px solid #333333;
+    border-top-style: double;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+} */
+
+
+/* Example 7 */
+/* 
+The padding property controls the padding on all sides of an element. To control each side individually, use these longhand properties:
+    - padding-top
+    - padding-right
+    - padding-bottom
+    - padding-left
+*/
+/* body {
+    font-family: sans-serif;
+}
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding-top: 100px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 4em;
+}
+
+.container {
+    border: 5px solid blue;
+    margin: 40px;
+    padding: 20px;
+} */
+
+
+/* Example 8 */
+/* The box model and inline boxes */
+/* 
+- You can see that the width, height, and top and bottom margins do not affect the <span>. The top and bottom padding and borders alter the size of the inline box but don't affect the position of the surrounding content. Instead, the top and bottom padding and borders overlap other words in the paragraph. Only the left and right padding, margins, and borders affect the position of the text surrounding the <span>. 
+- ONLY WHEN I add the "display: inline-block;" line, then:
+    - An element with "display: inline-block" does a subset of the block things we already know about:
+        - The width and height properties are respected.
+        - padding, margin, and border will cause other elements to be pushed away from the box.
+*/
+body {
+    font-family: sans-serif;
+}
+p {
+    border: 2px solid rebeccapurple;
+    width: 200px;
+}
+span {
+    margin: 20px 30px;
+    padding: 10px 20px;
+    width: 80px;
+    height: 150px;
+    background-color: lightblue;
+    border: solid blue;
+    border-width: 7px 1px;
+    display: inline-block;
 }
