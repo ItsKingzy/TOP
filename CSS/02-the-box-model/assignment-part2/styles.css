@@ -25,3 +25,28 @@ ul {
     /* The span element is inline by default so we have to change its display to block */
     display: block;
 }
+
+
+/* Example 2 */
+body {
+    font-family: sans-serif;
+}
+p,
+ul {
+    border: 2px solid rebeccapurple;
+}
+
+span,
+li {
+    border: 2px solid blue;
+}
+
+ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}
+
+.inline {
+    display: inline;
+}
