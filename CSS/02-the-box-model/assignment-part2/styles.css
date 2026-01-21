@@ -2,25 +2,26 @@
 
 /* Exmaple 1 */
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 p,
 ul {
-  border: 2px solid rebeccapurple;
-  padding: 0.2em;
+    border: 2px solid rebeccapurple;
+    padding: 0.2em;
 }
 
 .block,
 li {
-  border: 2px solid blue;
-  padding: 0.2em;
+    border: 2px solid blue;
+    padding: 0.2em;
 }
 
 ul {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .block {
-  display: block;
+    /* The span element is inline by default so we have to change its display to block */
+    display: block;
 }
