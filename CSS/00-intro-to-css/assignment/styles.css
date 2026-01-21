@@ -8,5 +8,23 @@ Declaration: property-value pair
 
 div.bold-text {
     font-weight: 700;
+    color: red;
+    height: 200px;
 }
 
+* {
+    line-height: 1.5;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========== CHALLENGE 1 ========== //
+//
+// Use the type selector to:
+// 1. Set the image width to 200px
+// 2. Set the list style of <ul> to none
+// 3. Add a dark red color to the <h1>
+//
+*/
