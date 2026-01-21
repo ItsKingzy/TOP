@@ -50,3 +50,28 @@ ul {
 .inline {
     display: inline;
 }
+
+
+/* 
+Making up a block box in CSS we have the:
+
+    - Content box: The area where your content is displayed; size it using properties like width and height.
+    - Padding box: The padding sits around the content as white space; size it using padding and related properties.
+    - Border box: The border box wraps the content and any padding; size it using border and related properties.
+    - Margin box: The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using margin and related properties.
+*/
+
+
+/* Example 3 */
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+}
+
+.alternate {
+    box-sizing: border-box;
+}
