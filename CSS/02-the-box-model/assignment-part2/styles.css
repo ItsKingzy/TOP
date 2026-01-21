@@ -75,3 +75,22 @@ Making up a block box in CSS we have the:
 .alternate {
     box-sizing: border-box;
 }
+
+
+/* Example 4 */
+.container {
+    border: 5px solid blue;
+    margin: 40px;
+}
+
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 10px;
+    height: 100px;
+    /* try changing the margin properties: */
+    margin-top: 0px;
+    margin-right: -4px;
+    margin-bottom: 40px;
+    margin-left: 40em;
+}
