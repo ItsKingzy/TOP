@@ -34,18 +34,22 @@
             <li>Divs and spans give no particular meaning to their content (i.e., They are just generic boxes that can contain anything).</li>
             <li>We will often need elements that serve no other purpose than to be “hook” elements.</li>
             <li>These can be particularily useful for giving and id or a class to target a group of elements that we want to style all at once in CSS.</li>
-            <li>** Div is a <u>block-level element</u> by default. It is commonly <u>used as a container element</u> to group other elements.
+            <li><strong>Div</strong> is a <u>block-level element</u> by default. It is commonly <u>used as a container element</u> to group other elements.
                 <ul>
                     <li>** Divs allow us to divide the page into different blocks and apply styling to those blocks.</li>
                 </ul>
             </li>
+            <li><strong>Span</strong> is an <u>inline-level element by default.</u></li>
+            <ul>
+                <li>** It can be used to group text content and inline HTML elements for styling and should ONLY be used when no other semantic HTML element is appropriate.</li>
+            </ul>
         </ul>
         
         <!-- Example of Divs -->
         <h2>Example of Using Divs:</h2>
-        <img src="./img/div-html-example.png" alt="Snippet of HTML code using divs">
+        <img src="./img/div-html-example.png" alt="Snippet of HTML code using divs" height="334px">
         <img src="./img/div-css-example.png" alt="Snippet of CSS code using divs">
-        <p style="padding-top: 30px; font-size: larger;"><u>Given the following snippet of HTML + CSS code above, we obtains the folowing output:</u></p>
+        <p style="margin-top: 30px; font-size: larger;"><u>Given the following snippet of HTML + CSS code above, we obtains the folowing output:</u></p>
 
         <div class="introduction">
             <h2>Introduction</h2>
@@ -59,5 +63,15 @@
             <h2>Contact Us</h2>
         </div>
 
+
+        <!-- Example of Spans -->
+        <h2 style="margin-top: 100px;">Example of Using Spans:</h2>
+        <img src="./img/span-html-example.png" alt="Snippet of HTML code using divs">
+        <img src="./img/span-css-example.png" alt="Snippet of CSS code using divs" height="150px">
+        <p style="margin-top: 30px; font-size: larger;"><u>Given the following snippet of HTML + CSS code above, we obtains the folowing output:</u></p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span class="highlight">quis nostrud <a href="https://www.dictionary.com/browse/exercitation">exercitation</a> ullamco laboris</span> nisi ut aliquip ex ea commodo consequat.
+        </p>
     </body>
 </html>
