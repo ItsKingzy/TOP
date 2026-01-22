@@ -7,3 +7,4 @@ DevTools in Chrome: https://developer.chrome.com/docs/devtools/overview/
 Learning about DOM: https://developer.chrome.com/docs/devtools/dom/
 Editing CSS within inspect elements: https://developer.chrome.com/docs/devtools/css
 Auto and Centering for elements using margin: https://css-tricks.com/almanac/properties/m/margin/
+Ampersand symbols in HTML: https://www.thoughtco.com/html-code-for-common-symbols-and-signs-2654021
