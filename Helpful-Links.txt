@@ -9,3 +9,4 @@ Editing CSS within inspect elements: https://developer.chrome.com/docs/devtools/
 Auto and Centering for elements using margin: https://css-tricks.com/almanac/properties/m/margin/
 Ampersand symbols in HTML: https://www.thoughtco.com/html-code-for-common-symbols-and-signs-2654021
 HTML Block and Inline Elements: https://www.w3schools.com/html/html_blocks.asp
+Inline vs Inline-Block Display in CSS: https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block
