@@ -19,4 +19,5 @@ body {
 .flex-container .two {
   flex: 2 1 0%;
 }
+
 /* If we were however to change the flex-grow to 5 or 8 or 20 etc. then the div.two would grow by Nx its size s.t. N is the positive integer. */
