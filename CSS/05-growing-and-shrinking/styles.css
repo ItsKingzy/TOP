@@ -1,3 +1,22 @@
 body {
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* Example flex-grow */
+.flex-container {
+  display: flex;
+}
+
+/* this selector selects all divs inside of .flex-container */
+.flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+  flex: 1 1 0%;
+}
+
+/* only div.two is selected here */
+.flex-container .two {
+  flex: 2 1 0%;
+}
+/* If we were however to change the flex-grow to 5 or 8 or 20 etc. then the div.two would grow by Nx its size s.t. N is the positive integer. */
