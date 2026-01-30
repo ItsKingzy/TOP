@@ -62,6 +62,12 @@
             <ul>
                 <li><strong>Ex:</strong>if our 3 divs from above had a width declaration like: width: 100px, and .flex-container was smaller than 300px, our divs would have to shrink to fit.</li>
             </ul>
+            <li>The default shrink factor is 
+            "flex-shrink: 1", which means all items will shrink evenly.</li>
+            <ul>
+                <li>f you do not want an item to shrink then you can specify flex-shrink: 0;</li>
+            </ul>
+            <li><strong>**</strong> You can also specify higher numbers to make certain items shrink at a higher rate than normal.</li>
             <li>An example would be more clear:</li>
         </ul>
 
@@ -70,5 +76,11 @@
             <div class="two-2"></div>
             <div class="three-2"></div>
         </div>
+
+        <ul>
+            <li>Here's an example. Note that we've also changed the flex-basis for reasons that will be explained shortly. If you shrink your browser window you'll notice that ".two-2" never gets smaller than the given width of 250px (<em>since the flex-shrink is set to 0</em>), even though the flex-grow rule would otherwise specify that each element should be equally sized.</li>
+        </ul>
+        
+        
     </body>
 </html>
