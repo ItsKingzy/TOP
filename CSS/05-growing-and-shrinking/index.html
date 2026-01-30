@@ -80,7 +80,15 @@
         <ul>
             <li>Here's an example. Note that we've also changed the flex-basis for reasons that will be explained shortly. If you shrink your browser window you'll notice that ".two-2" never gets smaller than the given width of 250px (<em>since the flex-shrink is set to 0</em>), even though the flex-grow rule would otherwise specify that each element should be equally sized.</li>
         </ul>
-        
+
+        <h4><strong>N.B.:</strong></h4>
+        <ul>
+            <li><strong>**</strong>An important implication to notice here is that when you specify <u>flex-grow</u> or <u>flex-shrink</u>, flex items do not necessarily respect your given values for width. 
+                <ul>
+                    <li>In the above example, all 3 divs are given a width of 250px, but when their parent is big enough, they grow to fill it.</li>
+                    <li>Likewise, when the parent is too small, the default behavior is for them to shrink to fit. This is not a bug, but it could be confusing behavior if you aren’t expecting it.</li>
+                </ul>
+        </ul>
         
     </body>
 </html>
