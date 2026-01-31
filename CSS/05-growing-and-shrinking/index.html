@@ -55,7 +55,7 @@
 
 
         <!-- Flex-shrink -->
-        <h3>Example for flex-shrink:</h3>
+        <h3>Flex-shrink:</h3>
         
         <ul>
             <li>Shrink is the idea of shrinking the flex items if the items are greater than the parent container</li>
@@ -90,7 +90,21 @@
                 </ul>
         </ul>
 
+
+
         <!-- Flex-Basis -->
+        <h3>Flex-basis:</h3>
+        <ul>
+            <li><strong>flex-basis</strong> sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size.</li>
+            <li>The shorthand value defaults to flex-basis: 0%.</li>
+            <ul>
+                <li>In the previous example, the reason we had to change it flex-basis to auto in the flex-shrink example is that with the <u>basis set to 0, those items would ignore the item's width</u>, and everything would shrink evenly.</li>
+                <li>Using auto as a flex-basis tells the item to check for a width declaration (width: 250px).</li>
+            </ul>
+            <li><strong>N.B.,</strong><em>The actual default value for flex-basis is auto, but when you specify flex: 1 on an element => flex: 1 is equivilant to flex: 1 1 0.</em></li>
+        </ul>
+
         
+
     </body>
 </html>
