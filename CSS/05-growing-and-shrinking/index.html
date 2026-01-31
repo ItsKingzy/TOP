@@ -102,12 +102,48 @@
                 <li>Using auto as a flex-basis tells the item to check for a width declaration (width: 250px).</li>
             </ul>
             <li><strong>N.B.,</strong><em>The actual default value for flex-basis is auto, but when you specify flex: 1 on an element => flex: 1 is equivilant to flex: 1 1 0.</em></li>
+            <li>Flex Basis can have units for their value (e.g., flex: 1 30px; /* 1 1 30px */) </li>
         </ul>
 
         <!-- What is flex auto -->
         <h3>What is flex auto?</h3>
         <ul>
             <li><strong>flex: auto</strong> is one of the shorthands of flex (i.e., flex: auto == flex-grow: 1, flex-shrink: 1, flex-basis: auto == flex: 1 1 auto.</li>
+        </ul>
+
+        <!-- More comments -->
+        <h3>More comments:</h3>
+        <ul>
+            <li>flex: &lt;number [1,∞]&gt; == flex: &lt;number [1,∞]&gt;</li>
+            <li><strong>One-value syntax:</strong></li>
+            <ul>
+                <li>
+                    a valid value for <flex-grow>: then, in all the browsers, the shorthand expands to flex: <flex-grow> 1 0%. However the specification says it should expand to flex: <flex-grow> 1 0.
+                </li>
+                <li>
+                    a valid value for <flex-basis>: then the shorthand expands to flex: 1 1 <flex-basis>.
+                </li>
+                <li>
+                    the keyword none or one of the global keywords.
+                </li>
+            </ul>
+            <li><strong>Two-value syntax:</strong></li>
+            <ul>
+                <li>
+                    The first value must be a valid value for flex-grow.
+                </li>
+                <li>
+                    The second value must be one of:
+                    <ul>
+                        <li>
+                            a valid value for flex-shrink: then, in all the browsers, the shorthand expands to flex: <flex-grow> <flex-shrink> 0%.
+                        </li>
+                        <li>
+                            a valid value for flex-basis: then the shorthand expands to flex: <flex-grow> 1 <flex-basis>.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </ul>
 
     </body>
