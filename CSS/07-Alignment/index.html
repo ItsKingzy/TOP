@@ -21,13 +21,26 @@
                     <img src="./img/flex1.png" width="400px">
                 </li>
             </ul>
+
             <li>Removing "flex: 1" from ".item" and adding "justify-content: space-between;" to ".container" gives us the following output:</li>
             <ul>
                 <li>
                     <img src="./img/justify-content-spacebetween.png" width="400px">
                 </li>
             </ul>
-            <li><strong>***** </strong>"justify-content" aligns items across the <strong>main axis</strong> (<em>currently the main axis is horizontal displaying elements in a row since "display: flex;" does this by default, <strong>however</strong>, if you change the "flex-direction" for a flex container, then the main axis would be that <u>new</u> direction that you have defined using "flex-direction"</em>).</li>
+
+            <li><strong>N.B.</strong>"justify-content" aligns items across the <strong>main axis</strong> (<em>currently the main axis is horizontal displaying elements in a row since "display: flex;" does this by default, <strong>however</strong>, if you change the "flex-direction" for a flex container, then the main axis would be that <u>new</u> direction that you have defined using "flex-direction"</em>).</li>
+
+            <li>Another example we use <strong>"justify-content"</strong> property with a value of "center" which justifies our content in the center along the <u>main axis</u>, but it's not a "true center" in the sense that it will center (or align) the element along the opposite axis (<strong>or cross axis</strong>).</li>
+            <ul>
+                <img src="./img/only-justify-content.png" width="400px">
+            </ul>
+            
+            <li>Then as a follow up, we use the <strong>"align-items"</strong> with a value of <strong>center</strong> to center the flex items along the <strong>cross axis</strong>.</li>
+            <ul>
+                <li><img src="./img/justify-content-and-align-content.png" width="400px"></li>
+            </ul>
+
 
         </ul>
     </body>
