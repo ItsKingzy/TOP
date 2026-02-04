@@ -109,11 +109,11 @@
                         <li>Alright, so: we have two children, each with a hypothetical size of 250px. The container needs to be at least 500px wide to contain these children at their hypothetical size.</li>
                         <li>Let's suppose we shrink the container to <strong>400px</strong>. Well, we can't stuff <strong>500px</strong> worth of content into a 400px bag! <u>We have a deficit of 100px</u>. Our elements will need to give up 100px total, in order for them to fit.</li>
                         <li><strong>The flex-shrink property lets us decide how that balance is paid.</strong></li>
-                        <li>Like <u>flex-grow,</u> it's a ratio. By default, both children have flex-shrink: 1, and so each child pays ½ of the balance. They each forfeit 50px, their actual size shrinking from 250px to 200px.</li>
+                        <li>Like <u>flex-grow,</u> it's a ratio. By default, both children have flex-shrink: 1, and so each child pays 1/2 of the balance. They each forfeit 50px, their actual size shrinking from 250px to 200px.</li>
                         <li>Now, let's suppose we crank that first child up to flex-shrink: 3:</li>
                         <li><img src="./img/flex-shrink-locked.webp" width="400px"></li>
-                        <li>We have a total deficit of 100px. Normally, each child would pay ½, but because we've tinkered with flex-shrink, the first element winds up paying ¾ (75px), and the second element pays ¼ (25px).</li>
-                        <li><strong>**</strong> Note that the absolute values don't matter, it's all about the ratio. If both children have flex-shrink: 1, each child will pay ½ of the total deficit. If both children are cranked up to flex-shrink: 1000, each child will pay 1000/2000 of the total deficit. Either way, it works out to the same thing.</li>
+                        <li>We have a total deficit of 100px. Normally, each child would pay ½, but because we've tinkered with flex-shrink, the first element winds up paying ¾ (75px), and the second element pays 1/4 (25px).</li>
+                        <li><strong>**</strong> Note that the absolute values don't matter, it's all about the ratio. If both children have flex-shrink: 1, each child will pay 1/2 of the total deficit. If both children are cranked up to flex-shrink: 1000, each child will pay 1000/2000 of the total deficit. Either way, it works out to the same thing.</li>
                     </ul>
                 </ul>
 
