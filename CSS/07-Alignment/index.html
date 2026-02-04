@@ -102,22 +102,28 @@
             </ul>
             
             <li><strong>flex-shrink</strong>: The idea behind shink is that the items can shink given a shrink factor, so if some object has a flex-basis of ay 450px, but your flex container is only 600px, then shinking your container down to 300px would make the "actual size" shink so hte actual size is now 300px (filling the size of the current flex box, whereas the item with 450px wouldnt originally fill the conatiner as it's only 450px and not 600px).</li>
+            <ul>
+                <li><strong>N.B.:</strong> The larger the flex-shink number (integer) is, the more of a squish factor that child element can take.</li>
+                <li><strong>EX:</strong></li>
                 <ul>
-                    <li><strong>N.B.:</strong> The larger the flex-shink number (integer) is, the more of a squish factor that child element can take.</li>
-                    <li><strong>EX:</strong></li>
-                    <ul>
-                        <li>Alright, so: we have two children, each with a hypothetical size of 250px. The container needs to be at least 500px wide to contain these children at their hypothetical size.</li>
-                        <li>Let's suppose we shrink the container to <strong>400px</strong>. Well, we can't stuff <strong>500px</strong> worth of content into a 400px bag! <u>We have a deficit of 100px</u>. Our elements will need to give up 100px total, in order for them to fit.</li>
-                        <li><strong>The flex-shrink property lets us decide how that balance is paid.</strong></li>
-                        <li>Like <u>flex-grow,</u> it's a ratio. By default, both children have flex-shrink: 1, and so each child pays 1/2 of the balance. They each forfeit 50px, their actual size shrinking from 250px to 200px.</li>
-                        <li>Now, let's suppose we crank that first child up to flex-shrink: 3:</li>
-                        <li><img src="./img/flex-shrink-locked.webp" width="400px"></li>
-                        <li>We have a total deficit of 100px. Normally, each child would pay ½, but because we've tinkered with flex-shrink, the first element winds up paying ¾ (75px), and the second element pays 1/4 (25px).</li>
-                        <li><strong>**</strong> Note that the absolute values don't matter, it's all about the ratio. If both children have flex-shrink: 1, each child will pay 1/2 of the total deficit. If both children are cranked up to flex-shrink: 1000, each child will pay 1000/2000 of the total deficit. Either way, it works out to the same thing.</li>
-                        <li>Essentially, if one child had flex-shink 3 and the other had flex-shink 1, then the total flex-shink becomes out of 4, so element 1 has 3 so they shink 3/4's of the new continainer size, while element 2 only shrinks by 1/4 the container size.</li>
-                    </ul>
+                    <li>Alright, so: we have two children, each with a hypothetical size of 250px. The container needs to be at least 500px wide to contain these children at their hypothetical size.</li>
+                    <li>Let's suppose we shrink the container to <strong>400px</strong>. Well, we can't stuff <strong>500px</strong> worth of content into a 400px bag! <u>We have a deficit of 100px</u>. Our elements will need to give up 100px total, in order for them to fit.</li>
+                    <li><strong>The flex-shrink property lets us decide how that balance is paid.</strong></li>
+                    <li>Like <u>flex-grow,</u> it's a ratio. By default, both children have flex-shrink: 1, and so each child pays 1/2 of the balance. They each forfeit 50px, their actual size shrinking from 250px to 200px.</li>
+                    <li>Now, let's suppose we crank that first child up to flex-shrink: 3:</li>
+                    <li><img src="./img/flex-shrink-locked.webp" width="400px"></li>
+                    <li>We have a total deficit of 100px. Normally, each child would pay ½, but because we've tinkered with flex-shrink, the first element winds up paying ¾ (75px), and the second element pays 1/4 (25px).</li>
+                    <li><strong>**</strong> Note that the absolute values don't matter, it's all about the ratio. If both children have flex-shrink: 1, each child will pay 1/2 of the total deficit. If both children are cranked up to flex-shrink: 1000, each child will pay 1000/2000 of the total deficit. Either way, it works out to the same thing.</li>
+                    <li>Essentially, if one child had flex-shink 3 and the other had flex-shink 1, then the total flex-shink becomes out of 4, so element 1 has 3 so they shink 3/4's of the new continainer size, while element 2 only shrinks by 1/4 the container size.</li>
                 </ul>
-
+                <li>When we set flex-shrink to 0 on specific flex items (or children of the flex box), we essentially “opt out” of the shrinking process altogether.</li>
+            </ul>
+            <li>Set minimul width (min-width) to items that overflow in a flex box, despite defining the hypothetical size and even a child with a preset minimum size (like text input, usually its 170-180px), we should redefine its min-width to 0px if we want flex shink to work on children items like text input, so they dont overflow in the flex box</li>
+            <li>To add on, a good example is shrinking a flex box so far that the child items cannot shrink further.</li>
+            <ul>
+                <li><strong>EX:</strong>the longest unbreakable string of characters in a flex child or flex item cannot break text with ease (see example image below)</li>
+                <li><img src="./img/min-size-violation.png" ></li>
+            </ul>
         </ul>
     </body>
 </html>
