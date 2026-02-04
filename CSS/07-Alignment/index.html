@@ -88,7 +88,7 @@
             <!-- PICKUP AT SHRINK AND GROW -->
             <li><strong>flex-basis</strong>: the Flexbox authors created a generic “size” property called flex-basis, It's like width or height, but pegged to the primary axis, like everything else. It allows us to set the hypothetical size of an element in the primary-axis direction, regardless of whether that's horizontal or vertical.</li>
             <ul>
-                <li>** flex-basis is more of a <em>suggestion</em> than a hardcoded contraint unlike width and height.</li>
+                <li>** flex-basis is more of a <em>suggestion</em> than a hardcoded contraint unlike width.</li>
             </ul>
 
             <li><strong>flex-grow</strong>: By default, elements in a Flexbox context will shrink down to their minimum comfortable size along the primary axis. <u>This often creates extra space.</u></li>
@@ -100,6 +100,8 @@
                     <strong>** </strong>What if multiple children set flex-grow? In this case, the extra space is divided proportionally between children based on their flex-grow value.
                 </li>
             </ul>
+            
+            <li><strong>flex-shrink</strong>: The idea behind shink is that the items can shink given a shrink factor, so if some object has a flex-basis of ay 450px, but your flex container is only 600px, then shinking your container down to 300px would make the "actual size" shink so hte actual size is now 300px (filling the size of the current flex box, whereas the item with 450px wouldnt originally fill the conatiner as it's only 450px and not 600px).</li>
 
         </ul>
     </body>
