@@ -91,6 +91,16 @@
                 <li>** flex-basis is more of a <em>suggestion</em> than a hardcoded contraint unlike width and height.</li>
             </ul>
 
+            <li><strong>flex-grow</strong>: By default, elements in a Flexbox context will shrink down to their minimum comfortable size along the primary axis. <u>This often creates extra space.</u></li>
+            <ul>
+                <li>
+                    The default value for flex-grow is 0, which means that growing is opt-in. If we want a child to gobble up any extra space in the container, we need to explicitly tell it so.
+                </li>
+                <li>
+                    <strong>** </strong>What if multiple children set flex-grow? In this case, the extra space is divided proportionally between children based on their flex-grow value.
+                </li>
+            </ul>
+
         </ul>
     </body>
 </html>
