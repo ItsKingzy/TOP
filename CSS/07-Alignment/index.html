@@ -114,6 +114,7 @@
                         <li><img src="./img/flex-shrink-locked.webp" width="400px"></li>
                         <li>We have a total deficit of 100px. Normally, each child would pay ½, but because we've tinkered with flex-shrink, the first element winds up paying ¾ (75px), and the second element pays 1/4 (25px).</li>
                         <li><strong>**</strong> Note that the absolute values don't matter, it's all about the ratio. If both children have flex-shrink: 1, each child will pay 1/2 of the total deficit. If both children are cranked up to flex-shrink: 1000, each child will pay 1000/2000 of the total deficit. Either way, it works out to the same thing.</li>
+                        <li>Essentially, if one child had flex-shink 3 and the other had flex-shink 1, then the total flex-shink becomes out of 4, so element 1 has 3 so they shink 3/4's of the new continainer size, while element 2 only shrinks by 1/4 the container size.</li>
                     </ul>
                 </ul>
 
