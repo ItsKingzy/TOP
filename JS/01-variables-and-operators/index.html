@@ -35,6 +35,18 @@
             <ul><li><img src="./img/JS-variables-2.png"></li></ul>
             <li>Here is the console output (EX2):</li>
             <ul><li><img src="./img/console-output-2.png"></li></ul>
+            <li>"<strong>const</strong>" is a <em>keyword</em> that assigned a fixed value to a variable that shall not be re-assigned</li>
+            <li>Here is the code we wrote (EX3):</li>
+            <ul><li><img src="./img/JS-variables-3.png"></li></ul>
+            <li>Here is the console output (EX3):</li>
+            <ul><li><img src="./img/console-output-3.png"></li></ul>
+            <li>We I thought it was going to be 3.14, bu it's an error of <u>TypeError</u> (undefined behaviour).</li>
+            <li>So in summary, there are two ways to declare a variable:</li>
+                <ul>
+                    <li><strong>let</strong>, which we can re-assign.</li>
+                    <li><strong>const</strong> which we can’t re-assign and will throw an error if we try.</li>
+                </ul>
+            <li>There is also a third way, <strong>var</strong>, which was the original way variables were declared in JavaScript. var is similar to let in that variables assigned this way can be reassigned, but it has other quirks that were cleared up when the language introduced let and const. By and large, it is not used anymore. However, you will likely come across code which uses var at some point, so it is useful to know that it exists.</li>
         </ul>
 
         <!-- Example 1 -->
@@ -56,5 +68,19 @@
             console.log(age);
         </script>
 
+        <!-- Example 3 -->
+        <script>
+            const pi = 3.14;
+            pi = 10;
+
+            console.log(pi);
+        </script>
+
+
+        <h2>Numbers</h2>
+        <ul>
+            <li>JS follows mathematical arithmetic convention: <strong>PEDMAS</strong></li>
+            <li>Therefore, something like <strong>(3 + 2) - 76 * (1 + 1)</strong> is totally legal and valid in JS.</li>
+        </ul>
     </body>
 </html>
