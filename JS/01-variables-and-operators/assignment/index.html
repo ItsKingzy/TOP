@@ -110,6 +110,53 @@
         </script>
 
         <!-- Example 2 -->
+        <script>
+            // We can do single line multiple declaration varibales
+            let user = 'John', age = 25, message2 = 'Hello';
+
+            // We could also just do single line declarations for clarity
+            let user2 = 'John';
+            let age2 = 25;
+            let message22 = 'Hello';
+
+            // Some people also define multiple variables in this multiline style:
+            let user3 = 'John',
+                age3 = 25,
+                message3 = 'Hello';
+            
+            // Or even "comma-first" style (Dont do this, terrible readability)
+            let user4 = 'John'
+                , age4 = 25
+                , message4 = 'Hello';
+        </script>
+
+        <!-- Example 3 -->
+        <script>
+            // In older scripts, you may also find another keyword: var instead of let:
+            var message5 = 'Hello';
+        </script>
+
+        <!-- Exmaple 4 -->
+        <script>
+            // We can also declare two variables and copy data from one into the other.
+            let hello6 = 'Hello world!';
+            let message6;
+            // copy 'Hello world' from hello into message
+            message6 = hello6;
+            // now two variables hold the same data
+            //alert(hello6); // Hello world!
+            //alert(message6); // Hello world!
+        </script>
+
+        <!-- Example 5 -->
+        <script>
+            //A variable should be declared only once. A repeated declaration of the same variable is an error:
+
+            let message7 = "This";
+
+            // repeated 'let' leads to an error
+            let message7 = "That"; // SyntaxError: 'message' has already been declared
+        </script>
 
     </body>
 </html>
