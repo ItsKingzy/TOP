@@ -291,7 +291,19 @@
             let s2 = "my" + " " + "string";
             console.log(s2);
 
-            
+            // Note that if any of the operands is a string, then the other one is converted to a string too.
+            console.log("1" + 2); // "12"
+            console.log(2 + "1"); // "21"
+
+            // Here, operators work one after another. The first + sums two numbers, so it returns 4, then the next + adds the string 1 to it, so it’s like 4 + '1' = '41'.
+            console.log(2 + 2 + "1");
+
+            // Here, the first operand is a string, the compiler treats the other two operands as strings too. The 2 gets concatenated to '1', so it’s like '1' + 2 = "12" and "12" + 2 = "122".
+            console.log("1" + 2 + 2);
+
+            // Another weird ex (I think this is because we arent "concatentating" now, but actually performing arithmetic operations on the strings, which is technically impossible)
+            console.log( 6 - '2' ); // 4, converts '2' to a number
+            console.log( '6' / '2' ); // 3, converts both operands to numbers
         </script>
     </body>
 </html>
