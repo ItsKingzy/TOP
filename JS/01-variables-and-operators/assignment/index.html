@@ -305,5 +305,22 @@
             console.log( 6 - '2' ); // 4, converts '2' to a number
             console.log( '6' / '2' ); // 3, converts both operands to numbers
         </script>
+
+        <!-- Example 5 -->
+        <script>
+            // Converts non-numbers
+            console.log( +true ); // 1
+            console.log( +"" );   // 0
+            // Same thing as Number(...) function but shorter
+
+            //Ex:
+            let apples = "2";
+            let oranges = "3";
+
+            console.log(apples + oranges); // "23"
+            console.log(+apples + +orangles); // 5
+            // Equivelantly
+            console.log(Number(apples) + Number(oranges)); // 5
+        </script>
     </body>
 </html>
