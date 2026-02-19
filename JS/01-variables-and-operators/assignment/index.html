@@ -335,6 +335,30 @@
             console.log(b1);  // 4 
             console.log(c1);  // 4
         </script>
+
+        <!-- Example 7 -->
+        <script>
+            // Postfix increment
+            let counter = 2;
+            counter++;
+            console.log(counter);  // 3
+            
+            counter--;
+            console.log(counter);
+        </script>
+
+        <!-- Example 8 -->
+        <script>
+            let counter1 = 1;
+            let z = ++counter1;
+            console.log(z);  // 2
+            // This output logs 2 to the console since the prefix increment on variable "counter" is done before assigning the updated value to z.
+
+            let counter2 = 1;
+            let y = counter2++;
+            console.log(y);  // 1
+            // This output logs 1 to the console since the counter variable is assigned to the y variable before the update (increment) due to the increment being postfix.
+        </script>
         
     </body> 
 </html>
