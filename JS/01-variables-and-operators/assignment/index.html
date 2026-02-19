@@ -321,6 +321,20 @@
             console.log(+apples + +orangles); // 5
             // Equivelantly
             console.log(Number(apples) + Number(oranges)); // 5
+
+            // N.B.: the “unary plus” has a priority of 14 which is higher than the 11 of “addition” (binary plus). That’s why, in the expression "+apples + +oranges", unary pluses work before the addition.
         </script>
-    </body>
+
+        <!-- Example 6 -->
+        <script>
+            // chaining assingnment
+            let a1, b1, c1;
+
+            a1 = b1 = c1 = 2 + 2;
+            console.log(a1);  // 4
+            console.log(b1);  // 4 
+            console.log(c1);  // 4
+        </script>
+        
+    </body> 
 </html>
