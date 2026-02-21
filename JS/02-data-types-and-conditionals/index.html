@@ -96,6 +96,45 @@
 
 
 
+        <h2 style="background-color: yellow; text-align: center;">Notes on Handling text: <strong><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Strings">link</a></strong>**</h2>
+        
+        <!-- Example 1 -->
+        <script>
+            const newline = `One day you finally knew what you had to do, and began,`;
+            console.log(newline);
+
+            /*
+            One day you finally knew
+            what you had to do, and began,
+            */
+
+
+            // This produces the same output
+            const newline2 = "One day you finally knew\nwhat you had to do, and began,";
+            console.log(newline2);
+
+            /*
+            One day you finally knew
+            what you had to do, and began,
+            */
+        </script>
+
+        <!-- Example 2 -->
+        <script>
+            // Example of using the same quote used for the string, inside the string 
+            const bigmouth = 'I\'ve got no right to take my place…';
+            console.log(bigmouth);
+
+            // Another example
+            const goodQuotes1 = 'She said "I think so!"';
+            const goodQuotes2 = `She said "I'm not going in there!"`;
+        </script>
+
+        <!-- Example 3 -->
+
+
+
+
 
         <ul>
             <li></li>
