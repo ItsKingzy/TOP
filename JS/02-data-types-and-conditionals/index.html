@@ -166,7 +166,28 @@
         </script>
 
         <!-- Example 2 -->
-        
+        <script>
+            // Different mathods on finding a char in a string
+            let text1 = "HELLO WORLD";
+            let char;
+
+            // charAt() method
+            char = text1.charAt(0);  // 'H'
+            console.log(char);
+
+            // charCodeAt() method (returns a hex [UTF-16] between 0 and 65535)
+            char = text1.charCodeAt(0);  // 72
+            console.log(char);
+
+            // codePointAt() method (I have no idea what this is)
+            let code = text.codePointAt(0); //Get code point value at the first position in a string
+            console.log(code);
+
+            // at() method (returns the character at a specified index (position) in a string.)
+            const name = "W3Schools";
+            let letter = name.at(2);
+            console.log(letter);
+        </script>
 
 
 
