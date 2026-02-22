@@ -217,8 +217,22 @@
             let part = text5.slice(7, 13);  // 'banana' (excluding the ',')
             console.log(part);  // 'banana'
             console.log(text5.slice(7)); // 'banana, kiwi'
-            console.log(text5.slice(-12)); // 'banana, wiwi'
+            console.log(text5.slice(-12)); // 'banana, kiwi'
+            console.log(text5.slice(-12, -6)); // 'Banana'
+
+            // substring(start, end) method (will consider negative ints as 0)
+            part = text5.substring(7, 13);
+            console.log(part); // 'banana'
+            part = text5.substring(7);
+            console.log(part); // 'banana, kiwi'
         </script>
+
+        <!-- Example 5 -->
+        <script>
+            // UPPER & lower methods
+            
+        </script>
+
 
         <ul>
             <li></li>
