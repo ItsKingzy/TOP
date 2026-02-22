@@ -192,8 +192,12 @@
             - at() method allows for negative ints while charAt() does not
             */
 
-            // Indexing
-
+            // Property Access []
+            char = text1[0];
+            console.log(char); // 'H'
+            // N.B.: This doesnt work (below)
+            text1[0] = "A";    // Gives no error, but does not work
+            console.log(text1);  // 'HELLO WORLD'
         </script>
 
 
