@@ -230,7 +230,18 @@
         <!-- Example 5 -->
         <script>
             // UPPER & lower methods
-            
+            text = "Hello World!";
+            console.log(text.toUpperCase());  // HELLO WORLD!
+
+            console.log(text.toLowerCase());  // hello world!
+
+            // isWellFormed() returns true if the sentence includes all valid surrogate pairs of UTF-16 chars, otherwise its considered a lone surrogate.
+            console.log(text.isWellFormed());
+            text = "Hello World \uD800";
+            console.log(text.isWellFormed());
+
+            // toWellFormed() method eturns a new string where all "lone surrogates" are replaced with the Unicode replacement character (U+FFFD)
+            console.log(text.toWellFormed());
         </script>
 
 
