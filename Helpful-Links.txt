@@ -11,3 +11,4 @@ Ampersand symbols in HTML: https://www.thoughtco.com/html-code-for-common-symbol
 HTML Block and Inline Elements: https://www.w3schools.com/html/html_blocks.asp
 Inline vs Inline-Block Display in CSS: https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block
 CSS Flexbox Layout Guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+String Methods in JS: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
