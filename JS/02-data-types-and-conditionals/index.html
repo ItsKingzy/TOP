@@ -258,6 +258,23 @@
             console.log("Trimmed end: " + text.trimEnd());
         </script>
 
+        <!-- Example 7 -->
+        <script>
+            // padStart()
+            text = "5";
+            console.log("String to manipulate: " + text);
+            console.log('Legth of string before padding: ' + text.length);
+            console.log(text = text.padStart(4, "0"));  // Pad a string with '0' until the length of the string is 4
+            console.log('Legth of string after padding: ' + text.length);
+
+            // padEnd()
+            text = "5";
+            console.log("String to manipulate: " + text);
+            console.log('Legth of string before padding: ' + text.length);
+            console.log(text = text.padEnd(4, "x"));  // Pad a string with '0' until the length of the string is 4
+            console.log('Length of string after padding: ' + text.length);
+        </script>
+
         <ul>
             <li></li>
         </ul>
