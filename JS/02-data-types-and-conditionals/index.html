@@ -283,6 +283,44 @@
             console.log(result + "\n" + result);
         </script>
 
+        <!-- Example 9 -->
+        <script>
+            text = "Please visit Microsoft!"
+            let newText = text.replace("Microsoft", "W3Schools");
+            console.log("Old text (pre .replace() method: " + text);
+            console.log("New text (post .replace() method): " + newText);
+
+            // N.B.: replace() method replaces only the first match
+            text = "Please visit Microsoft and Microsoft!"
+            newText = text.replace("Microsoft", "W3Schools");
+            console.log("Old text (pre .replace() method: " + text);
+            console.log("New text (post .replace() method): " + newText);
+
+            // N.B.: replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work:
+            text = "Please visit Microsoft!"
+            newText = text.replace("MICROSOFT", "W3Schools");
+            console.log("Old text (pre .replace() method: " + text);
+            console.log("New text (post .replace() method): " + newText);
+
+            // To replace case insensitive, use a regular expression with an /i flag (insensitive):
+            text = "Please visit Microsoft!"
+            newText = text.replace(/MICROSOFT/i, "W3Schools");
+            console.log("Old text (pre .replace() method: " + text);
+            console.log("New text (post .replace() method): " + newText);
+
+            // To replace all matches, use a regular expression with a /g flag (global match):
+            text = "Please visit Microsoft and Microsoft!"
+            newText = text.replace(/MICROSOFT/ig, "W3Schools"); // replaced all "Microsoft" appearanced with the case-insenitive flag and the global flag "/g"
+            console.log("Old text (pre .replace() method: " + text);
+            console.log("New text (post .replace() method): " + newText);
+            
+            text = "dogs go meow and dogs purr"
+            text = text.replaceAll(/Dogs/ig,"cats");
+            console.log(text[0].toUpperCase() + text.slice(1));
+        </script>
+
+        
+
         <ul>
             <li></li>
         </ul>
