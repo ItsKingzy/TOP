@@ -368,8 +368,51 @@
             console.log( 0 == false ); // true, types are different but remember that 0 is logically equivilant to false
             console.log( '' == false ); // true
             console.log( 0 === false ); // false, because the types are different
-
         </script>
+
+
+
+
+        <h2 style="background-color: yellow; text-align: center;">Notes on Logical operators: <strong><a href="https://javascript.info/logical-operators">link</a></strong></h2>
+
+        <!-- Example 1 -->
+        <script>
+            console.log( true || true );   // true
+            console.log( false || true );  // true
+            console.log( true || false );  // true
+            console.log( false || false ); // false
+        </script>
+
+        <!-- Example 2 -->
+        <script>
+            let hour = 9;
+
+            if (hour < 10 || hour > 18) {
+                console.log("The office is closed.");
+            }
+        </script>
+
+        <!-- Example 3 -->
+        <script>
+            // Multiple OR expressions
+            console.log( 1 || 0 ); // 1 (1 is truthy)
+
+            console.log( null || 1 ); // 1 (1 is the first truthy value)
+            console.log( null || 0 || 1 ); // 1 (the first truthy value)
+
+            console.log( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+        </script>
+
+        <!-- Example 4 -->
+        <script>
+            // The reason it's "SuperCoder" is because the string value that isnt empty is automatically true
+            let firstName = "";
+            let lastName = "";
+            let nickName = "SuperCoder";
+
+            console.log( firstName || lastName || nickName || "Anonymous"); // SuperCoder
+        </script>
+
 
 
     </body>
