@@ -345,6 +345,23 @@
             console.log( 'Bee' > 'Be' ); // true, same reasoning
         </script>
 
+        <script>
+            // Comparison of different types
+            console.log('2' > 1); // true, string '2' becomes a number 2
+            console.log('01' == 1); // true, string '01' becomes a number 1
+
+            // Boolean
+            console.log( true == 1 ); // true
+            console.log( false == 0 ); // true
+
+            // Some weird JS behaviour 
+            let a = 0;
+            console.log( Boolean(a) ); // false
+            let b = "0";
+            console.log( Boolean(b) ); // true
+            console.log(a == b); // true!
+        </script> 
+
 
     </body>
 </html>
