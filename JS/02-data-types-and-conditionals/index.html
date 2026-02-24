@@ -413,6 +413,45 @@
             console.log( firstName || lastName || nickName || "Anonymous"); // SuperCoder
         </script>
 
+        <!-- Example 5 -->
+        <script>
+            // AND op
+            console.log( true && true );   // true
+            console.log( false && true );  // false
+            console.log( true && false );  // false
+            console.log( false && false ); // false
+        </script>
+
+        <!-- Example 6 -->
+        <script>
+            hour = 12;
+            let minute = 30;
+
+            if (hour == 12 && minute === 30) {
+                console.log( 'The time is 12:30' );
+            }
+        </script>
+
+        <!-- Example 7 -->
+        <script>
+            // AND “&&” finds the first falsy value
+        
+            // if the first operand is truthy,
+            // AND returns the second operand:
+            console.log( 1 && 0 ); // 0
+            console.log( 1 && 5 ); // 5
+
+            // if the first operand is falsy,
+            // AND returns it. The second operand is ignored
+            console.log( null && 5 ); // null
+            console.log( 0 && "no matter what" ); // 0
+
+
+            // We can also pass several values in a row. See how the first falsy one is returned:
+            console.log( 1 && 2 && null && 3 ); // null
+            // When all values are truthy, the last value is returned:
+            console.log( 1 && 2 && 3 ); // 3, the last one
+        </script>
 
 
     </body>
