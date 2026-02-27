@@ -20,6 +20,7 @@ function showMessage(from, text = "no text given") {
 showMessage("Ann"); // Ann: no text given
 
 
+
 // Example using "nullish coalescing operator"
 function showCount(count) {
   // if count is undefined or null, show "unknown"
@@ -31,3 +32,35 @@ function showCount(count) {
 showCount(0); // 0
 showCount(null); // unknown
 showCount(); // unknown
+
+
+
+// Many returns in a single function
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+
+let age = prompt('How old are you?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Access granted' );
+} else {
+  alert( 'Access denied' );
+}
+
+
+
+// If a function does not return a value, it is the same as if it returns undefined:
+function doNothing() { /* empty */ }
+alert( doNothing() === undefined ); // true
+
+function doNothing() {
+  return;
+}
+alert( doNothing() === undefined ); // true
+
+
