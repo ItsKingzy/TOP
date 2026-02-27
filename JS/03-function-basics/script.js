@@ -64,3 +64,12 @@ function doNothing() {
 alert( doNothing() === undefined ); // true
 
 
+
+// Exercise:
+function min(a, b) {
+    return (a < b) ? a : b;
+}
+
+console.log(min(2, 5) == 2);  // true
+console.log(min(3, -1) == -1);  // true
+console.log(min(1, 1) == 1);  // true
