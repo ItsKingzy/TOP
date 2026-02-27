@@ -65,7 +65,7 @@ alert( doNothing() === undefined ); // true
 
 
 
-// Exercise:
+// Exercise min function:
 function min(a, b) {
     return (a < b) ? a : b;
 }
@@ -73,3 +73,18 @@ function min(a, b) {
 console.log(min(2, 5) == 2);  // true
 console.log(min(3, -1) == -1);  // true
 console.log(min(1, 1) == 1);  // true
+
+
+
+// Exercise pow function
+function pow(x, n) {
+    if (n == 1) {
+        return x
+    } else {
+        return x * pow(x, n-1);
+    }
+}
+
+console.log(pow(3, 2));  // = 3 * 3 = 9
+console.log(pow(3, 3));  // = 3 * 3 * 3 = 27
+console.log(pow(1, 100));  // = 1 * 1 * ...* 1 = 1
