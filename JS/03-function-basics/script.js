@@ -149,6 +149,66 @@ doubled = originals.map(function (item) {
 });
 
 
+// Functions are values:
+function sayHi() {   // (1) create
+  alert( "Hello" );
+}
+
+let func = sayHi;    // (2) copy
+
+func(); // Hello     // (3) run the copy (it works)!
+sayHi(); // Hello    //     this still works too (why wouldn't it)
 
 
 
+// Callback functions
+// The arguments showOk and showCancel of ask are called callback functions or just callbacks.
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+function showOk() {
+  alert( "You agreed." );
+}
+
+function showCancel() {
+  alert( "You canceled the execution." );
+}
+
+// usage: functions showOk, showCancel are passed as arguments to ask
+ask("Do you agree?", showOk, showCancel);
+
+
+
+// Function Expression
+let sum = function(a, b) {
+  return a + b;
+};
+// Function Declaration
+function sum(a, b) {
+  return a + b;
+}
+
+
+
+// This code works as intended due to function declaration earlier than it is defined.
+let age = prompt("What is your age?", 18);
+
+let welcome;
+
+if (age < 18) {
+
+  welcome = function() {
+    alert("Hello!");
+  };
+
+} else {
+
+  welcome = function() {
+    alert("Greetings!");
+  };
+
+}
+
+welcome(); // ok now
