@@ -36,32 +36,32 @@ showCount(); // unknown
 
 
 // Many returns in a single function
-function checkAge(age) {
-  if (age >= 18) {
-    return true;
-  } else {
-    return confirm('Do you have permission from your parents?');
-  }
-}
+// function checkAge(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return confirm('Do you have permission from your parents?');
+//   }
+// }
 
-let age = prompt('How old are you?', 18);
+// let age = prompt('How old are you?', 18);
 
-if ( checkAge(age) ) {
-  alert( 'Access granted' );
-} else {
-  alert( 'Access denied' );
-}
+// if ( checkAge(age) ) {
+//   alert( 'Access granted' );
+// } else {
+//   alert( 'Access denied' );
+// }
 
 
 
 // If a function does not return a value, it is the same as if it returns undefined:
 function doNothing() { /* empty */ }
-alert( doNothing() === undefined ); // true
+console.log( doNothing() === undefined ); // true
 
 function doNothing() {
   return;
 }
-alert( doNothing() === undefined ); // true
+console.log( doNothing() === undefined ); // true
 
 
 
@@ -88,3 +88,21 @@ function pow(x, n) {
 console.log(pow(3, 2));  // = 3 * 3 = 9
 console.log(pow(3, 3));  // = 3 * 3 * 3 = 27
 console.log(pow(1, 100));  // = 1 * 1 * ...* 1 = 1
+
+
+// Anonymous function definition
+(function () {
+  console.log("Hello World");
+});
+
+// Anonymous function example
+// textBox.addEventListener("keydown", function (event) {
+//   console.log(`You pressed "${event.key}".`);
+// });
+/* 
+^ In the example above, you are calling the addEventListener on
+the textBox variable, but you pass an anonymous function as the second
+argument in the .addEventListener method which doesnt have a name but 
+is rather just executed as an argumen all together
+*/
+
