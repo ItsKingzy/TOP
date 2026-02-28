@@ -100,9 +100,36 @@ console.log(pow(1, 100));  // = 1 * 1 * ...* 1 = 1
 //   console.log(`You pressed "${event.key}".`);
 // });
 /* 
-^ In the example above, you are calling the addEventListener on
-the textBox variable, but you pass an anonymous function as the second
-argument in the .addEventListener method which doesnt have a name but 
-is rather just executed as an argumen all together
+^ In the example above, you are calling the 
+addEventListener on the textBox variable, but 
+you pass an anonymous function as the second 
+argument in the .addEventListener method which 
+doesnt have a name but is rather just executed 
+as an argumen all together
 */
+
+// Arrow functions
+/* 
+If you pass an anonymous function like this,
+there's an alternative form you can use, called 
+an arrow function. Instead of function(event), 
+you write (event) =>:
+*/
+// textBox.addEventListener("keydown", (event) => {
+//   console.log(`You pressed "${event.key}".`);
+// });
+/*
+** if the function only takes on paramaeter you can drop the parentheses:
+
+textBox.addEventListener("keydown", (event) => {
+  console.log(`You pressed "${event.key}".`);
+});
+
+*/
+
+
+
+
+
+
 
