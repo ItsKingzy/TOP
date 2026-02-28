@@ -127,7 +127,26 @@ textBox.addEventListener("keydown", (event) => {
 
 */
 
+// Arrow function continued
+/*
 
+Finally, if your function contains only one line 
+that's a return statement, you can also omit the 
+braces and the return keyword and implicitly 
+return the expression. In the following example, 
+we're using the map() method of Array to double 
+every value in the original array:
+
+*/
+const originals = [1, 2, 3];
+
+const doubled = originals.map(item => item * 2);
+
+console.log(doubled); // [2, 4, 6]
+// This is the same output but using the longer anonymous syntax:
+doubled = originals.map(function (item) {
+  return item * 2;
+});
 
 
 
