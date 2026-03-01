@@ -25,8 +25,18 @@ function capitalize(string) {
     let strLower = string.toLowerCase();
     let strCapitalized = strLower.charAt(0).toUpperCase() + strLower.slice(1,);
 
-    return strCapitalized;
+    return strCapitalized
 }
 console.log(capitalize("abcd"));  // Abcd
 console.log(capitalize("ABCD"));  // Abcd
 console.log(capitalize("aBcD"));  // Abcd
+
+
+
+
+// Write a function called lastLetter that takes a string and returns the very last letter of that string:
+function lastLetter(string) {
+    return string.at(-1);
+    // N.B.: Cannot use charAt(...) with a negative index val, therefore use .at(...) method.
+}
+console.log(lastLetter("abcd"));  // d
