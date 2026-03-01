@@ -13,3 +13,20 @@ console.log(add7(10));
     // multiply(3, 2) should return 6
 let multiply = (num1, num2) => num1 * num2;
 console.log(multiply(3, 2));
+
+
+
+
+// Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+    // capitalize("abcd") should return "Abcd"
+    // capitalize("ABCD") should return "Abcd"
+    // capitalize("aBcD") should return "Abcd"
+function capitalize(string) {
+    let strLower = string.toLowerCase();
+    let strCapitalized = strLower.charAt(0).toUpperCase() + strLower.slice(1,);
+
+    return strCapitalized;
+}
+console.log(capitalize("abcd"));  // Abcd
+console.log(capitalize("ABCD"));  // Abcd
+console.log(capitalize("aBcD"));  // Abcd
