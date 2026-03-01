@@ -229,9 +229,9 @@ let double = n => n * 2;
 console.log(double(2)); // 4
 
 // If there are no arguments, parentheses are empty, but they must be present:
-let sayHi = () => console.log("Hello!");
+let sayHi1 = () => console.log("Hello!");
 
-sayHi();
+sayHi1();
 
 
 // Arrow function example 3
@@ -251,3 +251,39 @@ let sum5 = (a, b) => {
   return result;
 }
 console.log(sum5(1,2)); // 3
+
+
+
+
+
+// Arrow functions practice example
+/*
+- Replace Function Expressions with arrow functions in the code below:
+*/
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+
+
+// My Solution:
+let ask_soln1 = (
+  question = "Do you agree? (line 278)", 
+  yes = () => {
+    console.log("You agreed");
+  }, 
+  no = () => {
+    console.log("You canceled the execution.");
+  }) => {
+  if (confirm(question)) yes();
+  else no();
+};
+
+ask_soln1();
