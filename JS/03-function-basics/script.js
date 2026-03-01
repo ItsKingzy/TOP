@@ -242,3 +242,12 @@ let welcome2 = (age5 < 18) ?
   () => console.log("Greetings!");
 
 welcome2();
+
+
+
+// Multiline arrow functions
+let sum5 = (a, b) => {
+  let result = a + b;
+  return result;
+}
+console.log(sum5(1,2)); // 3
