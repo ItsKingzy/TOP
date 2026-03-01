@@ -144,7 +144,7 @@ const doubled = originals.map(item => item * 2);
 
 console.log(doubled); // [2, 4, 6]
 // This is the same output but using the longer anonymous syntax:
-doubled = originals.map(function (item) {
+const doubled2 = originals.map(function (item) {
   return item * 2;
 });
 
@@ -182,11 +182,11 @@ ask("Do you agree?", showOk, showCancel);
 
 
 // Function Expression
-let sum = function(a, b) {
+let sum0 = function(a, b) {
   return a + b;
 };
 // Function Declaration
-function sum(a, b) {
+function sum1(a, b) {
   return a + b;
 }
 
@@ -212,3 +212,33 @@ if (age < 18) {
 }
 
 welcome(); // ok now
+
+
+
+
+// Arrow function example 1
+let sum2 = (a, b) => a + b; // This uses the concept of anonymous functions and arrow functions combined
+  // a + b, is what is returned
+  // (a, b) == function(a,b)
+
+console.log(sum2(1,2)); // 3
+
+
+// Arrow function example 2
+let double = n => n * 2;
+console.log(double(2)); // 4
+
+// If there are no arguments, parentheses are empty, but they must be present:
+let sayHi = () => console.log("Hello!");
+
+sayHi();
+
+
+// Arrow function example 3
+let age5 = prompt("what is your age?");
+
+let welcome2 = (age5 < 18) ?
+  () => console.log("Hello!") :
+  () => console.log("Greetings!");
+
+welcome2();
