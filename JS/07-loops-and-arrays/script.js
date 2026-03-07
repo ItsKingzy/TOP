@@ -33,3 +33,7 @@ const filtered = cats.filter(lCat);
 console.log(filtered);  // [ "Leopard", "Lion" ]
 
 
+// Exmaple 4: using filter with an arrow function
+const filtered2 = cats.filter((cat) => cat.startsWith("L"));
+console.log(filtered2);  // [ "Leopard", "Lion" ] (same output as before)
+
