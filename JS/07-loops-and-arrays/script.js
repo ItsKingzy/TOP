@@ -62,11 +62,29 @@ let i = 0;
 myFavoriteCats = "My cats are called ";
 while (i < myCats.length) {
     if (i === myCats.length - 1) {
-        myFavoriteCats += `and ${cats[i]}.`;
+        myFavoriteCats += `and ${myCats[i]}.`;
     } else {
-        myFavoriteCats += `${cats[i]}, `;
+        myFavoriteCats += `${myCats[i]}, `;
     }
 
     i++;
 }
+console.log(myFavoriteCats);
+
+
+// Example 8: do while loop
+myFavoriteCats = "My cats are called ";
+
+i = 0;
+
+do {
+  if (i === myCats.length - 1) {
+    myFavoriteCats += `and ${myCats[i]}.`;
+  } else {
+    myFavoriteCats += `${myCats[i]}, `;
+  }
+
+  i++;
+} while (i < myCats.length);
+
 console.log(myFavoriteCats);
