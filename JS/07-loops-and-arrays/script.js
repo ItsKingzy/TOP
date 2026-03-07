@@ -37,3 +37,21 @@ console.log(filtered);  // [ "Leopard", "Lion" ]
 const filtered2 = cats.filter((cat) => cat.startsWith("L"));
 console.log(filtered2);  // [ "Leopard", "Lion" ] (same output as before)
 
+
+// Example 5: example 1 but with normal loop
+for (let i = 0; i < cats.length; i++) {
+  console.log(cats[i]);
+}
+
+// Example 6: looping through an array
+const myCats = ["Nova", "Summer", "Yuki"];
+let myFavortieCats = "My cats are called ";
+for (let i = 0; i < myCats.length; i++) {
+    if (i === myCats.length - 1) {
+       // We are at the end of the array
+        myFavortieCats +=  `and ${myCats[i]}.`;
+    } else {
+        myFavortieCats += `${myCats[i]}, `;
+    }
+}
+console.log(myFavortieCats);
