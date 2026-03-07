@@ -55,3 +55,18 @@ for (let i = 0; i < myCats.length; i++) {
     }
 }
 console.log(myFavortieCats);
+
+
+// Example 7: while loop
+let i = 0;
+myFavoriteCats = "My cats are called ";
+while (i < myCats.length) {
+    if (i === myCats.length - 1) {
+        myFavoriteCats += `and ${cats[i]}.`;
+    } else {
+        myFavoriteCats += `${cats[i]}, `;
+    }
+
+    i++;
+}
+console.log(myFavoriteCats);
