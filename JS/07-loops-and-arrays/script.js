@@ -98,3 +98,24 @@ outerLoop: for (let i = 0; i < 3; i++) {
   }
 }
 alert("Done!");
+
+
+// Practice exercise 1:
+let j = 0;
+while(j != 3) {
+  console.log(`number ${j}`);
+  j++;
+}
+
+
+// Practice exercise 2:
+/*
+Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
+
+The loop must ask for a number until either the visitor enters a number greater than 100 or cancels the input/enters an empty line.
+
+Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
+*/
+do {
+  num = prompt("Enter a number higher than 100");
+} while (num <= 100);
