@@ -152,3 +152,13 @@ let arr2 = [];
 let fruits = ["Apple", "Orange", "Plum"];
 fruits[4] = "Banana";  // Adding an element to the 5th position (4th position will be empty)
 console.log(fruits);
+
+// length PROPERTY
+console.log(fruits.length);  // Returns length of list (currently return 4)
+
+// Arrays can store everything
+let arr3 = ["Apple", {name: "John"}, true, function() {console.log("Hello");}]
+// Get the object at index 1 and show their name
+console.log(arr3[1].name);  // John
+// Get the function at the index 3 and run it
+console.log(arr[3]());  // Hello
