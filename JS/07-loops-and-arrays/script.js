@@ -177,9 +177,26 @@ let fruits2 = ["Apple", "Orange", "Pear"];
 console.log(fruits2.pop());  // Remove "Pear" from fruits2 and print it
 console.log(fruits2);  // ["Apple", "Orange"]
 
-// .push method
+// .push() method
 fruits2 = ["Apple", "Orange"];
 fruits2.push("Pear");
 console.log(fruits2);  // ["Apple", "Orange", "Pear"]
 // The call fruits2.push(...) is equal to fruits2[fruits.length] = ...
 
+// .shift() method
+fruits2 = ["Apple", "Orange", "Pear"];
+console.log(fruits2.shift());  // Remove Apple and print it
+console.log(fruits2);  // ["Orange", "Pear"]
+
+// .unshift() method
+fruits2 = ["Orange", "Pear"];
+fruits2.unshift("Apple");
+console.log(fruits2);  // ["Apple", "Orange", "Pear"]
+
+// Push and unshift can take multiple arguments at once
+fruits2 = ["Apple"];
+fruits2.push("Orange", "Peach");  // ["Apple", "Orange", "Peach"]
+fruits2.unshift("Pineapple", "Lemon"); // ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
+console.log(fruits2);  // ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
+
+// 
