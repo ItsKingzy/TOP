@@ -141,3 +141,14 @@ function prime(n) {
   }
 }
 prime(5);
+
+
+
+
+// Arrays (two way of dedclaring an empty array)
+let arr1 = new Array();
+let arr2 = [];
+
+let fruits = ["Apple", "Orange", "Plum"];
+fruits[4] = "Banana";  // Adding an element to the 5th position (4th position will be empty)
+console.log(fruits);
