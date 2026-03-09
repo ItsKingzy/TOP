@@ -199,4 +199,9 @@ fruits2.push("Orange", "Peach");  // ["Apple", "Orange", "Peach"]
 fruits2.unshift("Pineapple", "Lemon"); // ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
 console.log(fruits2);  // ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
 
-// 
+// Copy by reference
+fruits2 = ["Banana"];
+let arr5 = fruits2; // copy by reference (two variables reference the same array)
+console.log( arr5 === fruits2 ); // true
+arr5.push("Pear"); // modify the array by reference
+console.log( fruits2 ); // Banana, Pear - 2 items now
