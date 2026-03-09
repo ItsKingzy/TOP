@@ -172,3 +172,9 @@ console.log(fruits[fruits.length-1]);  // Banana
   // [arr.length - 1] == .at(-1)
 console.log(fruits.at(-1));  // Banana
 
+// .pop() Method
+let fruits2 = ["Apple", "Orange", "Pear"];
+console.log(fruits2.pop());  // Remove "Pear" from fruits2 and print it
+console.log(fruits2);  // ["Apple", "Orange"]
+
+//
