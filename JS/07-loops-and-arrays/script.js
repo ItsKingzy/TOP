@@ -177,4 +177,9 @@ let fruits2 = ["Apple", "Orange", "Pear"];
 console.log(fruits2.pop());  // Remove "Pear" from fruits2 and print it
 console.log(fruits2);  // ["Apple", "Orange"]
 
-//
+// .push method
+fruits2 = ["Apple", "Orange"];
+fruits2.push("Pear");
+console.log(fruits2);  // ["Apple", "Orange", "Pear"]
+// The call fruits2.push(...) is equal to fruits2[fruits.length] = ...
+
