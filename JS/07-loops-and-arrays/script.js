@@ -212,5 +212,8 @@ let matrix = [
   [4, 5, 6],
   [7, 8, 9]
 ];
-
 console.log(matrix[0][1]); // 2, the second value of the first inner array
+
+// after [] was converted to '' (object (array) converted to a primitive (string), thus true)
+alert( 0 == '' ); // true, as '' becomes converted to number 0
+alert('0' == '' ); // false, no type conversion, different strings
