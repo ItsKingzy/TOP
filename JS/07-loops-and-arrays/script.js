@@ -205,3 +205,12 @@ let arr5 = fruits2; // copy by reference (two variables reference the same array
 console.log( arr5 === fruits2 ); // true
 arr5.push("Pear"); // modify the array by reference
 console.log( fruits2 ); // Banana, Pear - 2 items now
+
+// Matrix
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix[0][1]); // 2, the second value of the first inner array
