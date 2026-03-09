@@ -163,7 +163,7 @@ let arr3 = ["Apple", {name: "John"}, true, function() {console.log("Hello");}]
 // Get the object at index 1 and show their name
 console.log(arr3[1].name);  // John
 // Get the function at the index 3 and run it
-console.log(arr[3]());  // Hello
+console.log(arr3[3]());  // Hello
 
 
 // We cannot access the last item in an array using -1 index, that doesn't work in JS, we must calculate it using [arr.length - 1]
@@ -215,5 +215,34 @@ let matrix = [
 console.log(matrix[0][1]); // 2, the second value of the first inner array
 
 // after [] was converted to '' (object (array) converted to a primitive (string), thus true)
-alert( 0 == '' ); // true, as '' becomes converted to number 0
-alert('0' == '' ); // false, no type conversion, different strings
+console.log( 0 == '' ); // true, as '' becomes converted to number 0
+console.log('0' == '' ); // false, no type conversion, different strings
+
+
+
+
+// Array exercise 1
+/*
+Let’s try 5 array operations.
+
+1. Create an array styles with items “Jazz” and “Blues”.
+2. Append “Rock-n-Roll” to the end.
+3. Replace the value in the middle with “Classics”. Your code for finding the middle value should work for any arrays with odd length.
+4. Strip off the first value of the array and show it.
+5. Prepend Rap and Reggae to the array.
+*/
+// Step 1
+let styles = ["Jazz", "Blues"];
+console.log(styles);
+// Step 2
+styles.push("Rock-n-Roll");
+console.log(styles);
+// Step 3
+styles[1] = "Classics";
+console.log(styles);
+// Step 4
+styles.shift();
+console.log(styles);
+// Step 5
+styles.unshift("Rap", "Reggae");
+console.log(styles);
