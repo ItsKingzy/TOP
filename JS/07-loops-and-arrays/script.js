@@ -276,3 +276,45 @@ function getMaxSubSum(arr) {
   sumPositive = 0;  // Sum of all positive numbers in array
 
 }
+
+
+
+
+// Deleting an item from an array
+arr1 = ["I", "go", "home"];
+delete arr1[1];  // remove "go"
+console.log(arr1[1]);  // undefined
+// now arr1 = ["I", , "home"]
+console.log(arr1.length);  // 3
+
+// Proper way to delete an item in an array 
+  // SYNTAX: arr.splice(start[, deleteCount, elem1, ..., elemN])
+  /*
+  It modifies arr starting from the index start: removes deleteCount elements and then inserts elem1, ..., elemN at their place. Returns the array of removed elements.
+  */
+arr1 = ["I", "study", "JavaScript"];
+arr1.splice(1, 1);  // from index 1 remove 1
+console.log(arr1);  // ["I", "JavaScript"]
+
+// More examples of splice
+arr1 = ["I", "study", "JavaScript", "right", "now"];
+// remove 3 first elements and replace them with another
+let deleted = arr1.splice(0, 3, "Let's", "dance");
+console.log( arr1 ) // now ["Let's", "dance", "right", "now"]
+console.log(deleted); // splice returns deleted elements ["I", "study", "JavaScript"]
+
+// The splice method is also able to insert the elements without any removals. For that, we need to set deleteCount to 0:
+arr1 = ["I", "study", "JavaScript"];
+// From index 2
+// delete 0 items
+// then insert "complex" and "language"
+arr1.splice(2, 0, "complex", "language")
+console.log(arr1);  // ["I", "study", "complex", "language", "JavaScript"]
+
+// Negative splicing is allowed!!
+arr1 = [1,2,5];
+// from index -1 (one step from the end)
+// delete 0 elements,
+// then insert 3 and 4
+arr1.splice(-1, 0, 3, 4);
+console.log( arr1 ); // 1,2,3,4,5
