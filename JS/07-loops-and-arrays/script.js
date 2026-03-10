@@ -346,3 +346,17 @@ console.log( arr1.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
 console.log(arr1);  // Original array [1,2]
 arr1.push([3,4]);
 console.log(arr1);  // This actually manipulates the array, and not just returning a copy of the array
+
+
+
+ 
+// Iterate: forEach method
+  /* Syntax: 
+    arr.forEach(function(item, index, array) {
+      // ... do something with an item
+    });
+  */
+// for each element call alert
+["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+  console.log(`${item} is at index ${index} in ${array}`);
+});
