@@ -318,3 +318,16 @@ arr1 = [1,2,5];
 // then insert 3 and 4
 arr1.splice(-1, 0, 3, 4);
 console.log( arr1 ); // 1,2,3,4,5
+
+
+
+
+// Slice method (Syntax: arr.slice([start], [end]))
+  // Returns a copy of the array given the start and end of the array to slice
+arr1 = ["t", "e", "s", "t"];
+console.log(arr1.slice(1,3));  // e,s (copy from 1 to 3 exluding 3)
+console.log(arr1.slice(-2));  // s,t (copy from -2 till the end) 
+
+//** .slice() alone can make a copy of the entire array, without a reference
+arr2 = arr1.slice();
+console.log(arr2);  // ["t", "e", "s", "t"]
