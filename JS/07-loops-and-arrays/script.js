@@ -331,3 +331,18 @@ console.log(arr1.slice(-2));  // s,t (copy from -2 till the end)
 //** .slice() alone can make a copy of the entire array, without a reference
 arr2 = arr1.slice();
 console.log(arr2);  // ["t", "e", "s", "t"]
+
+
+
+
+// Concat method
+arr1 = [1,2];
+// create an array from: arr and [3,4]
+console.log( arr1.concat([3, 4]) ); // 1,2,3,4
+// create an array from: arr and [3,4] and [5,6]
+console.log( arr1.concat([3, 4], [5, 6]) ); // 1,2,3,4,5,6
+// create an array from: arr and [3,4], then add values 5 and 6
+console.log( arr1.concat([3, 4], 5, 6) ); // 1,2,3,4,5,6
+console.log(arr1);  // Original array [1,2]
+arr1.push([3,4]);
+console.log(arr1);  // This actually manipulates the array, and not just returning a copy of the array
