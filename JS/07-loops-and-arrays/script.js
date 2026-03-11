@@ -371,3 +371,25 @@ console.log(arr1.indexOf(false));  // 2
 console.log(arr1.indexOf(null));  // -1 (i.e., item not in array)
 console.log(arr1.includes(1));  // true
 console.log(arr1.lastIndexOf(0));  // 3
+
+
+
+// arr.find(fn)
+/*
+let result = arr.find(function(item, index, array) {
+  // if true is returned, item is returned and iteration is stopped
+  // for falsy scenario returns undefined
+});
+*/
+let users = [
+  {id: 1, name: "John", age: 20},
+  {id: 2, name: "Pete", age: 55},
+  {id: 3, name: "Mary", age: 24},
+  {id: 4, name: "John"}
+];
+let user = users.find(item => item.id == 1);
+console.log(user.name); // John
+// Find the index of the first John
+console.log(users.findIndex(user => user.name == 'John')); // 0
+// Find the index of the last John
+console.log(users.findLastIndex(user => user.name == 'John')); // 3
