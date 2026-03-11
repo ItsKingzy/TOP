@@ -360,3 +360,14 @@ console.log(arr1);  // This actually manipulates the array, and not just returni
 ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
   console.log(`${item} is at index ${index} in ${array}`);
 });
+
+
+
+
+// Searching in Array
+arr1 = [1, 0, false, 0];
+console.log(arr1.indexOf(0));  // 1
+console.log(arr1.indexOf(false));  // 2
+console.log(arr1.indexOf(null));  // -1 (i.e., item not in array)
+console.log(arr1.includes(1));  // true
+console.log(arr1.lastIndexOf(0));  // 3
