@@ -453,3 +453,18 @@ function compareNumericOptimized(a, b) {
 arr1 = [1, 15, 2];
 arr1.sort((a, b) => a - b);
 console.log(arr1);
+
+
+
+
+// Reverse
+arr1 = [1, 2, 3, 4, 5];
+arr1.reverse();
+console.log(arr1);  // [5, 4, 3, 2, 1]
+
+
+
+
+// 
+
+
