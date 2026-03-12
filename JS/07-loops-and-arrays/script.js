@@ -418,3 +418,38 @@ let result = arr.map(function(item, index, array) {
 let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length)
 console.log(lengths); // 5,7,6
 
+
+
+// Sort
+/*
+The items are sorted as strings by default.
+
+Literally, all elements are converted to strings for comparisons. For strings, lexicographic ordering is applied and indeed "2" > "15".
+*/
+arr1 = [1, 2, 15];
+arr1.sort();
+console.log(arr1);  // ["1", "15", "2"]
+
+// To sort as numbers, we need to provide a helper function to the sort method
+function compareNumeric(a, b){
+  if (a > b) return 1;  // a goes after b
+  if (a == b) return 0;  // equal in sorting order
+  if (a < b) return -1; // a goes before b
+}
+arr1 = [1, 2, 15];
+arr1.sort(compareNumeric);
+console.log(arr1);  // [1, 2, 15]
+
+// A shorter version of the compareNumerics is:
+function compareNumericOptimized(a, b) {
+  return a - b;
+  // This work because:
+    // 1 - 2 = -1 (therefore 1 goes before 2)
+    // 2 - 2 = 0 (therefore equal in sorting)
+    // 15 - 2 = 13 (therefore 15 goes after 2)
+}
+
+// Even more simple:
+arr1 = [1, 15, 2];
+arr1.sort((a, b) => a - b);
+console.log(arr1);
