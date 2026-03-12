@@ -483,3 +483,6 @@ str = arr1.join(' # '); // glue the array into a string using ' # '
 
 console.log(str); // Bilbo # Gandalf # Nazgul
 
+
+// Visit this link for more info on arrays and methods:
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
