@@ -406,3 +406,15 @@ users = [
 let someUsers = users.filter(item => item.id < 3);
 console.log(someUsers.length); // 2
 console.log(someUsers);  // [ {id: 1, name: "John"}, {id: 2, name: "Pete"} ]
+
+
+
+// map
+/*
+let result = arr.map(function(item, index, array) {
+  // returns the new value instead of item
+});
+*/
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length)
+console.log(lengths); // 5,7,6
+
