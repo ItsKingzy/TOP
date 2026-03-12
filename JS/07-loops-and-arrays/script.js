@@ -465,6 +465,21 @@ console.log(arr1);  // [5, 4, 3, 2, 1]
 
 
 
-// 
+// split and join
+let names = "Bilbo, Gandalf, Nazgul";
+arr1 = names.split(", ");
+for (let name of arr1) {
+  console.log(`A message to ${name}.`);
+}
 
+// An empty string delimiter would spilt the string into individual chars
+let str = "test";
+console.log(str.split(""));  // [t,e,s,t]
+
+// .join(str) joins an array into a string, splitting the items by the delimiter you chose
+arr1 = ['Bilbo', 'Gandalf', 'Nazgul'];
+
+str = arr1.join(' # '); // glue the array into a string using ' # ' 
+
+console.log(str); // Bilbo # Gandalf # Nazgul
 
