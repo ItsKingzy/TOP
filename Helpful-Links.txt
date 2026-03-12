@@ -14,3 +14,4 @@ CSS Flexbox Layout Guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox
 String Methods in JS: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 WAVE (web accessibility evaluation tool): https://wave.webaim.org
 Google Lighthouse: https://developer.chrome.com/docs/lighthouse/overview
+Google Lighthouse online tool: https://pagespeed.web.dev
