@@ -543,7 +543,9 @@ console.log(arr1); // Outputs [1, 2, 3, 4, 5], original array is not affected
 // Reduce method
 /**
  * Essentially how this method works, it takes two arguments (second arg is optional)
- * arg1 (accumulator): the value that gets updated during the loop
+ * arg1 (accumulator): the callback function which accepts two args
+ *    arg1.1: current value of the result at that point in the loop (i.e., running total)
+ *    arg1.2: current value in the array
  * arg2 (initialValue): the OPTIONAL value you can set if you want to start the loop from an initial value instead of the first item in the array
  */
 arr1 = [1, 2, 3, 4, 5];
@@ -554,3 +556,21 @@ const productOfAllNums = arr1.reduce(
 );
 console.log(productOfAllNums);
 console.log(arr1);
+
+
+// Refactored form of og sumOfTripledEvens
+function sumOfTripledEvensRefactored(array) {
+  // Filter the even numbers
+  let filterArr = array.filter((item) => item % 2 === 0);
+
+  // Triple the even numbers (using map)
+  let mapArr = filterArr.map((num) => num * 3);
+
+  // Sum up the tripled numbers
+  let reduceArr = mapArr.reduce((total, currVal) => total + currVal, 0);
+  
+  return reduceArr;
+}
+const arr6 = [1,2,3,4,5]
+let output = sumOfTripledEvensRefactored(arr6);
+console.log(output);
