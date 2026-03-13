@@ -535,6 +535,22 @@ function isOdd(num) {
   return num % 2 !== 0;  // odd since odd nums arent divisible by 2
 }
 arr1 = [1, 2, 3, 4, 5];
-const oddNums = arr.filter(isOdd);
+const oddNums = arr1.filter(isOdd);
 console.log(oddNums); // Outputs [1, 3, 5] (since callback retured true for num 1, 3, and 5)
 console.log(arr1); // Outputs [1, 2, 3, 4, 5], original array is not affected
+
+
+// Reduce method
+/**
+ * Essentially how this method works, it takes two arguments (second arg is optional)
+ * arg1 (accumulator): the value that gets updated during the loop
+ * arg2 (initialValue): the OPTIONAL value you can set if you want to start the loop from an initial value instead of the first item in the array
+ */
+arr1 = [1, 2, 3, 4, 5];
+const initVal = 1;
+const productOfAllNums = arr1.reduce(
+  (total, currItem) => total * currItem, // arg1 (the accumulator, or callback function)
+  initVal,  // arg2 (initialValue, set to 10)
+);
+console.log(productOfAllNums);
+console.log(arr1);
