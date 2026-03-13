@@ -574,3 +574,15 @@ function sumOfTripledEvensRefactored(array) {
 const arr6 = [1,2,3,4,5]
 let output = sumOfTripledEvensRefactored(arr6);
 console.log(output);
+
+// TOP solution:
+/*
+
+function sumOfTripledEvens(array) {
+  return array
+    .filter((num) => num % 2 === 0)
+    .map((num) => num * 3)
+    .reduce((acc, curr) => acc + curr);
+}
+
+*/
