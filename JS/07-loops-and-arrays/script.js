@@ -506,3 +506,17 @@ function sumOfTripledEvens(array) {
   }
   return sum;
 }
+
+
+
+// map function example
+// args:
+  // num -> value in the array
+  // index -> index of the value in the array
+  // array -> the entire array you are working with
+function addOne(num, index = null, array = null) {
+  return num + 1;
+}
+arr1 = [1, 2, 3, 4, 5];
+const mappedArr = arr1.map(addOne);
+console.log(mappedArr);  // [2, 3, 4, 5, 6]
