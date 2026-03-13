@@ -520,3 +520,10 @@ function addOne(num, index = null, array = null) {
 arr1 = [1, 2, 3, 4, 5];
 const mappedArr = arr1.map(addOne);
 console.log(mappedArr);  // [2, 3, 4, 5, 6]
+console.log(arr1);  // OG array has not been touched [1, 2, 3, 4, 5]
+
+
+// map using arrow function
+arr1 = [1, 2, 3, 4, 5];
+const mappedArr2 = arr1.map((num) => num + 1);
+console.log(mappedArr2);  // [2, 3, 4, 5, 6]
