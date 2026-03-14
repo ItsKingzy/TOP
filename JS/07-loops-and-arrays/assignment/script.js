@@ -2,6 +2,17 @@
 
 // Translate border-left-width to borderLeftWidth
 function camelize(str) {
+    return str
+        // Converts str into an array
+        .split("-")
+        // Removes trailing spaces for all items
+        .map(item => item.trim())
+        // Map each item to a Title form
+        .map((word, index) => index == 0 ? word : word.at(0).toUpperCase() + word.substring(1,))
+        // Join the strings together
+        .join("")
+
+    /* OLD SOLUTION:
     // Turns the string into an array
     let strSplice = str.split("-");
 
@@ -17,8 +28,9 @@ function camelize(str) {
     );
 
     return strSplice.join("");
+    */
 }
 
 console.log(camelize("background-color"));
 console.log(camelize("list-style-image"));
-console.log(camelize("-webkit-transition-  f"));
+console.log(camelize(" - webkit-transition-  f"));  // Edgecase
