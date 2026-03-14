@@ -16,7 +16,7 @@ function camelize(str) {
         (str) => str.at(0).toUpperCase() + str.substring(1,)
     );
 
-    return strSplice.join(" ");
+    return strSplice.join("");
 }
 
 console.log(camelize("background-color"));
