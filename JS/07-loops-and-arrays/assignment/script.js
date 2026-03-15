@@ -1,6 +1,6 @@
 // Link to website with exercises: https://javascript.info/array-methods#tasks
 
-// Translate border-left-width to borderLeftWidth
+// 01 - Translate border-left-width to borderLeftWidth
 function camelize(str) {
     return str
         // Converts str into an array
@@ -34,3 +34,15 @@ function camelize(str) {
 console.log(camelize("background-color"));
 console.log(camelize("list-style-image"));
 console.log(camelize(" - webkit-transition-  f"));  // Edgecase
+
+
+
+
+// 02 - Filter range 
+function filterRange(arr, a, b) {
+    // returns item if (item >= a && item <= b) is true
+    return arr.filter(item => item >= a && item <= b);
+}
+let arr = [5, 3, 8, 1, 9, 10];
+let filtered = filterRange(arr, 1, 7);
+console.log(filtered);
