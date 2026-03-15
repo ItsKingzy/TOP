@@ -72,3 +72,16 @@ arr.sort((a,b) => b - a);  // Decending order
 //arr.sort((a,b) => b + a); // Ascending order
 console.log(arr);
 
+
+
+
+// 05 - Copy and sort array
+function copySorted(arr) {
+    let arrCopy = arr.slice();  // no args, copies whole arr
+    return arrCopy.sort((a, b) => a.localeCompare(b));  // Can compare UTF-8 letters outside alphanumeric set
+}
+arr = ["HTML", "JavaScript", "CSS"];
+let sorted = copySorted(arr);
+
+console.log(sorted);  // CSS, HTML, JavaScript
+console.log(arr);     // HTML, JavaScript, CSS (no changes)
