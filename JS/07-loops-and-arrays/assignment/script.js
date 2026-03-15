@@ -62,3 +62,13 @@ function filterRangeInPlace(arr, a, b) {
 }
 filterRangeInPlace(arr, 1, 4);
 console.log(arr); // [3, 1]
+
+
+
+
+// 04 - Sort in decreasing order
+arr = [5,2,1,-10,8];
+arr.sort((a,b) => b - a);  // Decending order
+//arr.sort((a,b) => b + a); // Ascending order
+console.log(arr);
+
