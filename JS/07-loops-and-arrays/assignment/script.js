@@ -46,3 +46,19 @@ function filterRange(arr, a, b) {
 let arr = [5, 3, 8, 1, 9, 10];
 let filtered = filterRange(arr, 1, 7);
 console.log(filtered);
+
+
+
+
+// 03 - Filter range "in place"
+arr = [5, 3, 8, 1];
+function filterRangeInPlace(arr, a, b) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < a || arr[i] > b) {
+            arr.splice(i, 1);
+            i--;  // push back the index to the same position to start from there
+        }
+    }
+}
+filterRangeInPlace(arr, 1, 4);
+console.log(arr); // [3, 1]
