@@ -110,7 +110,7 @@ console.log(shuffle(arr));  // arr = [3, 1, 2]
 
 
 
-// Get average age
+// Extra: Get average age
 function getAverageAge(users) {
     let average = users
         .map(item => item.age)
@@ -124,3 +124,26 @@ let mary = { name: "Mary", age: 29 };
 
 arr = [ john, pete, mary ];
 console.log(getAverageAge(arr));
+
+
+
+
+// 07 - Filter unique array members
+function unique(arr) {
+    let uniqueItems = [];
+
+    for (let item of arr) {
+        // includes is used to see if an item is in an array 
+            // Similar to 'if item not in uniqueItems:' in python
+        if (!uniqueItems.includes(item)) {
+            uniqueItems.push(item);
+        }
+    }
+    
+    return uniqueItems;
+}
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+console.log(unique(strings)); // Hare, Krishna, :-O
