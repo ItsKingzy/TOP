@@ -82,6 +82,27 @@ function copySorted(arr) {
 }
 arr = ["HTML", "JavaScript", "CSS"];
 let sorted = copySorted(arr);
-
 console.log(sorted);  // CSS, HTML, JavaScript
 console.log(arr);     // HTML, JavaScript, CSS (no changes)
+
+
+
+
+// 06 - Shuffle an array
+function shuffle(array) {
+    let shuffle = [];
+    // assign a rank to every number
+    for (let i = 0; i < array.length; i++) {
+        shuffle.push({val: array[i], rank: Math.random()})
+    }
+
+    // Sort the list based on rank
+    shuffle.sort((a, b) => a.rank - b.rank);
+
+    // Return just the val of the array
+    return shuffle.map(item => item.val)
+}
+arr = [1, 2, 3];
+console.log(shuffle(arr));  // arr = [3, 2, 1]
+console.log(shuffle(arr));  // arr = [2, 1, 3]
+console.log(shuffle(arr));  // arr = [3, 1, 2]
