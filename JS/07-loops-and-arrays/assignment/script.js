@@ -106,3 +106,21 @@ arr = [1, 2, 3];
 console.log(shuffle(arr));  // arr = [3, 2, 1]
 console.log(shuffle(arr));  // arr = [2, 1, 3]
 console.log(shuffle(arr));  // arr = [3, 1, 2]
+
+
+
+
+// Get average age
+function getAverageAge(users) {
+    let average = users
+        .map(item => item.age)
+        .reduce((prev, curr) => prev + curr);
+    
+    return average / users.length
+}
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+arr = [ john, pete, mary ];
+console.log(getAverageAge(arr));
