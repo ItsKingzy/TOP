@@ -15,6 +15,35 @@
             <li><img src="./img/DOM.png" alt="img of DOM tree"></li>
         </ul>
 
+
+        <!-- Targeting nodes with selectors -->
+        <h2>Targeting nodes with selectors</h2>
+        <!-- EXAMPLE -->
+        <div id="container">
+            <div class="display"></div>
+            <div class="controls"></div>
+        </div>
+        <!-- END EXAMPLE -->
+
+
+        <!-- DOM Methods -->
+        <h2>DOM Methods</h2>
+        
+        <h3>Query Selector</h3>
+        <ul>
+            <li>element.querySelector(selector) => returns a reference to the first match of selector</li>
+            <li>element.querySelectorAll(selectors) => returns a "NodeList" containing references to all of the matches of the selectors.</li>
+            <li>*** NodeList != Array</li>
+            <ul>
+                <li>The big distinction is that several array methods are missing from NodeLists.</li>
+                <li>One solution, if problems arise, is to convert the NodeList into an array. You can do this with Array.from()</li>
+            </ul>
+        </ul>
+
+
+
+
+
         <script src="./script.js"></script>
     </body>
 </html>
