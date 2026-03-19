@@ -19,3 +19,19 @@ console.log(display2); // <div class="display"></div>
 
 // EXAMPLE - element creation
 const div = document.createElement("div");
+// sets the indicated style rule to the element in the div variable
+div.style.color = "blue";
+
+// set the entire inline style
+div.setAttribute("style", "color: blue; background: white;");
+// Cannot use kebab case, must use camel case
+div.style.backgroundColor = "white";
+// bracket notation with kebab-case: also works
+div.style["background-color"];
+
+// bracket notation with camelCase: also works
+div.style["backgroundColor"];
+
+
+
+// FULL EXAMPLE

@@ -50,12 +50,37 @@
                 <li>parentNode.insertBefore(newNode, referenceNode) - inserts newNode into parentNode before referenceNode.</li>
                 <li>parentNode.removeChild(child) - removes child from parentNode on the DOM and returns a reference to child.</li>
             </ul>
+            <li><img src="./img/altering-elements.png" alt=""></li>
         </ul>
 
+        <h3>Editing Attributes</h3>
+        <ul>
+            <li>// if id exists, update it to 'theDiv', else create an id with value "theDiv"</li>
+            <li>div.setAttribute("id", "theDiv");</li>
 
+            <li>// returns value of specified attribute, in this case "theDiv"</li>
+            <li>div.getAttribute("id");</li>
 
+            <li>// removes specified attribute</li>
+            <li>div.removeAttribute("id");</li>
+        </ul>
+        <ul>
+            <li>// adds class "new" to your new div</li>
+            <li>div.classList.add("new");</li>
 
+            <li><// removes "new" class from div</li>
+            <li>div.classList.remove("new");</li>
+
+            <li>// if div doesn't have class "active" then add it, or if it does, then remove it</li>
+            <li>div.classList.toggle("active");</li>
+        </ul>
 
         <script src="./script.js"></script>
+    </body>
+
+    <body>
+        <!-- FULL EXAMPLE -->
+        <h1>THE TITLE OF YOUR WEBPAGE</h1>
+        <div id="container"></div>
     </body>
 </html>
