@@ -35,3 +35,8 @@ div.style["backgroundColor"];
 
 
 // FULL EXAMPLE
+const container1 = document.querySelector("#container2");
+const content = document.createElement("div");
+content.classList.add("content");
+content.textContent = "This is the glorious text-content!";
+container1.appendChild(content);
