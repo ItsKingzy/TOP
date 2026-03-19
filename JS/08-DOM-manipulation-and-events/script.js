@@ -35,8 +35,19 @@ div.style["backgroundColor"];
 
 
 // FULL EXAMPLE
-const container1 = document.querySelector("#container2");
+const container2 = document.querySelector("#container2");
 const content = document.createElement("div");
 content.classList.add("content");
 content.textContent = "This is the glorious text-content!";
-container1.appendChild(content);
+container2.appendChild(content);
+
+
+
+
+// EXERCISE
+// Add a <p> with red text that says “Hey I’m red!”
+const p = document.createElement("p");
+p.style.color = "red";
+p.textContent = "Hey I'm red!"
+container2.appendChild(p);
+// Add an <h3> with blue text that says “I’m a blue h3!”
