@@ -51,3 +51,7 @@ p.style.color = "red";
 p.textContent = "Hey I'm red!"
 container2.appendChild(p);
 // Add an <h3> with blue text that says “I’m a blue h3!”
+const h3 = document.createElement("h3");
+h3.textContent = "I'm a blue h3!"
+h3.style["color"] = "blue";
+container2.appendChild(h3);
