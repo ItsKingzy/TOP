@@ -28,7 +28,7 @@
 
         <!-- DOM Methods -->
         <h2>DOM Methods</h2>
-        
+
         <h3>Query Selector</h3>
         <ul>
             <li>element.querySelector(selector) => returns a reference to the first match of selector</li>
@@ -37,6 +37,18 @@
             <ul>
                 <li>The big distinction is that several array methods are missing from NodeLists.</li>
                 <li>One solution, if problems arise, is to convert the NodeList into an array. You can do this with Array.from()</li>
+            </ul>
+        </ul>
+
+        <h3>Element Creation</h3>
+        <ul>
+            <li>document.createElement(tagName, [options]) => creats a new element of tag type tagName.</li>
+            <li><strong>N.B.,</strong> This function does NOT put your new element into the DOM - it creates it in memory.</li>
+            <li>You can place the element into the DOM with one of the following methods.</li>
+            <ul>
+                <li>parentNode.appendChild(childNode) - appends childNode as the last child of parentNode.</li>
+                <li>parentNode.insertBefore(newNode, referenceNode) - inserts newNode into parentNode before referenceNode.</li>
+                <li>parentNode.removeChild(child) - removes child from parentNode on the DOM and returns a reference to child.</li>
             </ul>
         </ul>
 

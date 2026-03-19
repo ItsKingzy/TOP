@@ -14,3 +14,8 @@ const controls = document.querySelector(".controls");
 // selects the prior sibling => .display
 const display2 = controls.previousElementSibling;
 console.log(display2); // <div class="display"></div>
+
+
+
+// EXAMPLE - element creation
+const div = document.createElement("div");
