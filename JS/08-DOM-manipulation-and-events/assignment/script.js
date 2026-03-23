@@ -19,8 +19,15 @@ sect.appendChild(linkPara); // Moves the linkPara node to the bottom of the sect
 sect.removeChild(linkPara); // Removes the linkPara from the DOM
 linkPara.remove();          // This works the exact same 
                                 // (Only differnce is that it refers itself)
-linkPara.parentNode.removeChild(linkPara); // .remove() is not supported in older browsers, 
+// linkPara.parentNode.removeChild(linkPara); // .remove() is not supported in older browsers, 
                                            // so this is the work around for that
 
 // Manipulating Styles
+// para.style.color = "white";
+// para.style.backgroundColor = "black";
+// para.style["padding"] = "10px";
+// para.style.width = "250px";
+// para.style["text-align"] = "center";
 
+// Adding class to the p element
+para.classList.add("highlight");  // This adds the styles from the head in the index file
