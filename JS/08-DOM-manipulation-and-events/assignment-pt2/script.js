@@ -1,3 +1,5 @@
+// Reference to exercise: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#creating_a_dynamic_shopping_list
+
 const ul = document.querySelector("ul");
 const input = document.querySelector("input");
 const button = document.querySelector("button");
@@ -6,9 +8,8 @@ const button = document.querySelector("button");
 button.addEventListener("click", clickButton);
 
 function clickButton(event) {
+    // Prevent auto form refreshing (inevitably avoiding clearing the list)
     event.preventDefault();
-    // console.log("success");
-    // console.log(input.value);
     
     let inputVal = input.value;  // Grab current input after submitting
     input.value = "";  // Reset input
