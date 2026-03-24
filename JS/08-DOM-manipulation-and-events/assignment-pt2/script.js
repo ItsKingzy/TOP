@@ -1,5 +1,6 @@
 // Reference to exercise: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#creating_a_dynamic_shopping_list
 
+// const to keep the queries non-modified
 const ul = document.querySelector("ul");
 const input = document.querySelector("input");
 const button = document.querySelector("button");
